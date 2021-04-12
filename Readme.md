@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Alena Karenina](https://up.htmlacademy.ru/adaptive/22/user/158812).
-* Наставник: `Неизвестно`.
+* Наставник: [Маргарита Попова](https://up.htmlacademy.ru/adaptive/22/user/230166).
 
 ---
 
