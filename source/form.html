@@ -36,7 +36,7 @@
 
       <main class="page-main">
         <h1 class="visually-hidden">
-          Оставьте свой отзыв о туристическом городе Sedona
+          Форма отзыва о туристическом городе Sedona
         </h1>
 
         <section class="intro intro--inner">
@@ -45,103 +45,106 @@
           </div>
         </section>
 
-        <section class="intro-heading">
-          <h2 class="intro-heading__title">
-            Оставьте свой отзыв
-          </h2>
-          <p class="intro-heading__subtitle">
-            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
-          </p>
-        </section>
+        <section class="feedback">
 
-        <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-          <div class="feedback__wrapper">
-
-            <fieldset class="feedback__item fieldset fieldset--name">
-              <legend class="fieldset__legend">Представьтесь:</legend>
-
-              <div class="fieldset__row fieldset__row--inline">
-                <label class="fieldset__label" for="name">Имя*:</label>
-                <input class="fieldset__input input input--text" type="text" name="name" id="name" placeholder="Петр" required>
-              </div>
-
-              <div class="fieldset__row fieldset__row--inline">
-                <label class="fieldset__label" for="surname">Фамилия*:</label>
-                <input class="fieldset__input input input--text" type="text" name="surname" id="surname" placeholder="Иванов" required>
-              </div>
-
-              <div class="fieldset__row fieldset__row--inline">
-                <label class="fieldset__label" for="patronymic">Отчество:</label>
-                <input class="fieldset__input input input--text" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
-              </div>
-            </fieldset>
-
-            <fieldset class="feedback__item feedback__item--full fieldset fieldset--contacts">
-              <legend class="fieldset__legend">Контактная информация:</legend>
-
-              <div class="fieldset__row">
-                <label class="fieldset__label" for="phone">Контактный телефон*:</label>
-                <input class="fieldset__input input input--text" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
-              </div>
-
-              <div class="fieldset__row">
-                <label class="fieldset__label" for="email">Электронная почта*:</label>
-                <input class="fieldset__input input input--text" type="email" name="email" id="email" placeholder="Введите e-mail" required>
-              </div>
-            </fieldset>
-
-            <fieldset class="feedback__item fieldset fieldset--impression">
-              <legend class="fieldset__legend">Ваше общее впечатление:</legend>
-
-              <div class="fieldset__row fieldset__row--inline">
-                <input class="fieldset__input input input--radio" type="radio" name="impression" id="impression-good" value="good" checked>
-                <label class="fieldset__label" for="impression-good">Скорее положительное</label>
-              </div>
-
-              <div class="fieldset__row fieldset__row--inline">
-                <input class="fieldset__input input input--radio" type="radio" name="impression" id="impression-bad" value="bad">
-                <label class="fieldset__label" for="impression-bad">Скорее отрицательное</label>
-              </div>
-
-              <div class="fieldset__row fieldset__row--inline">
-                <input class="fieldset__input input input--radio" type="radio" name="impression" id="impression-difficult" value="difficult">
-                <label class="fieldset__label" for="impression-difficult">Затрудняюсь ответить</label>
-              </div>
-            </fieldset>
-
-            <fieldset class="feedback__item feedback__item--full fieldset fieldset--visited">
-              <legend class="fieldset__legend">Посещенные достопримечательности:</legend>
-
-              <div class="fieldset__row fieldset__row--inline">
-                <input class="fieldset__input input input--checkbox" type="checkbox" name="bridge" id="bridge" checked>
-                <label class="fieldset__label" for="bridge">Мост Дьявола</label>
-              </div>
-
-              <div class="fieldset__row fieldset__row--inline">
-                <input class="fieldset__input input input--checkbox" type="checkbox" name="mountain" id="mountain" checked>
-                <label class="fieldset__label" for="mountain">Гора-Колокол</label>
-              </div>
-
-              <div class="fieldset__row fieldset__row--inline">
-                <input class="fieldset__input input input--checkbox" type="checkbox" name="park" id="park" checked>
-                <label class="fieldset__label" for="park">Слайд-парк</label>
-              </div>
-
-              <div class="fieldset__row fieldset__row--inline">
-                <input class="fieldset__input input input--checkbox" type="checkbox" name="rocks" id="rocks">
-                <label class="fieldset__label" for="rocks">Красные скалы</label>
-              </div>
-            </fieldset>
-
-            <div class="feedback__item feedback__item--full fieldset fieldset--emotions">
-              <label class="feedback__label" for="emotions">Опишите свои эмоции:</label>
-              <textarea class="fieldset__textarea input input--textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
-            </div>
-
-            <input class="fieldset__submit feedback__submit" type="submit" value="Отправить отзыв">
-            <span class="feedback__legend">* — обязательные поля</span>
+          <div class="feedback__heading page-name">
+            <h2 class="page-name__title">
+              Оставьте свой отзыв
+            </h2>
+            <p class="page-name__subtitle">
+              Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+            </p>
           </div>
-        </form>
+
+          <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="feedback__wrapper">
+
+              <fieldset class="feedback__item fieldset fieldset--name">
+                <legend class="fieldset__legend">Представьтесь:</legend>
+
+                <label class="fieldset__row fieldset__row--inline">
+                  <span class="fieldset__label">Имя*:</span>
+                  <input class="fieldset__input input input--text" type="text" name="name" id="name" placeholder="Петр" required>
+                </label>
+
+                <label class="fieldset__row fieldset__row--inline">
+                  <span class="fieldset__label">Фамилия*:</span>
+                  <input class="fieldset__input input input--text" type="text" name="surname" id="surname" placeholder="Иванов" required>
+                </label>
+
+                <label class="fieldset__row fieldset__row--inline">
+                  <span class="fieldset__label">Отчество:</span>
+                  <input class="fieldset__input input input--text" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+                </label>
+              </fieldset>
+
+              <fieldset class="feedback__item feedback__item--full fieldset fieldset--contacts">
+                <legend class="fieldset__legend">Контактная информация:</legend>
+
+                <label class="fieldset__row">
+                  <span class="fieldset__label">Контактный телефон*:</span>
+                  <input class="fieldset__input input input--text" type="text" name="phone" id="phone" placeholder="Введите телефон" required>
+                </label>
+
+                <label class="fieldset__row">
+                  <span class="fieldset__label">Электронная почта*:</span>
+                  <input class="fieldset__input input input--text" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                </label>
+              </fieldset>
+
+              <fieldset class="feedback__item fieldset fieldset--impression">
+                <legend class="fieldset__legend">Ваше общее впечатление:</legend>
+
+                <label class="fieldset__row fieldset__row--inline radio-button">
+                  <input class="fieldset__input radio-button__input" type="radio" name="impression" id="impression-good" value="good" checked>
+                  <span class="fieldset__label radio-button__label">Скорее положительное</span>
+                </label>
+
+                <label class="fieldset__row fieldset__row--inline radio-button">
+                  <input class="fieldset__input radio-button__input" type="radio" name="impression" id="impression-bad" value="bad">
+                  <span class="fieldset__label radio-button__label">Скорее отрицательное</span>
+                </label>
+
+                <label class="fieldset__row fieldset__row--inline radio-button">
+                  <input class="fieldset__input radio-button__input" type="radio" name="impression" id="impression-difficult" value="difficult">
+                  <span class="fieldset__label radio-button__label">Затрудняюсь ответить</span>
+                </label>
+              </fieldset>
+
+              <fieldset class="feedback__item feedback__item--full fieldset fieldset--visited">
+                <legend class="fieldset__legend">Посещенные достопримечательности:</legend>
+
+                <label class="fieldset__row fieldset__row--inline checkbox">
+                  <input class="fieldset__input checkbox__input" type="checkbox" name="attractions" value="bridge" id="bridge" checked>
+                  <span class="fieldset__label checkbox__label">Мост Дьявола</span>
+                </label>
+
+                <label class="fieldset__row fieldset__row--inline checkbox">
+                  <input class="fieldset__input checkbox__input" type="checkbox" name="attractions" value="mountain" id="mountain" checked>
+                  <span class="fieldset__label checkbox__label">Гора-Колокол</span>
+                </label>
+
+                <label class="fieldset__row fieldset__row--inline checkbox">
+                  <input class="fieldset__input checkbox__input" type="checkbox" name="attractions" value="park" id="park" checked>
+                  <span class="fieldset__label checkbox__label">Слайд-парк</span>
+                </label>
+
+                <label class="fieldset__row fieldset__row--inline checkbox">
+                  <input class="fieldset__input checkbox__input" type="checkbox" name="attractions" value="rocks" id="rocks">
+                  <span class="fieldset__label checkbox__label">Красные скалы</span>
+                </label>
+              </fieldset>
+
+              <label class="feedback__item feedback__item--full fieldset fieldset--emotions">
+                <span class="feedback__label">Опишите свои эмоции:</span>
+                <textarea class="fieldset__textarea input input--textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+              </label>
+
+              <button class="fieldset__submit feedback__submit button" type="button">Отправить отзыв</button>
+              <div class="feedback__legend">* — обязательные поля</div>
+            </div>
+          </form>
+        </section>
 
       </main>
 
