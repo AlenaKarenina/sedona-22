@@ -136,10 +136,14 @@
             </p>
           </div>
           <div class="video__player">
-            <img class="video__placeholder" src="img/video-placeholder.jpg" width="320" height="201" alt="Видео">
+
+            <video class="video__presentation" width="320" height="201" poster="img/video-placeholder.jpg" aria-label="Видеопрезентация туристического города Седона"></video>
 
             <div class="video__controls">
-              <div class="video__time-line"></div>
+              <div class="video__progress">
+                <div class="video__progress-bar"></div>
+                <div class="video__progresstoddler"></div>
+              </div>
 
               <button class="video__button video__button--replay" type="button">
                 <span class="visually-hidden">Повтор</span>
@@ -153,6 +157,7 @@
                 <span class="visually-hidden">Во весь экран</span>
               </button>
             </div>
+
           </div>
         </section>
 
