@@ -1,13 +1,10 @@
 .main-nav {
-  display: none;
+  min-height: 56px;
   outline: 2px solid green;
-
-  &--open {
-    display: block;
-  }
 }
 
 .main-nav__list {
+  display: none;
   @include list-style-none;
 }
 
@@ -20,4 +17,45 @@
   color: white;
   @include text-parametr(18px, 40px, 700);
   text-decoration: none;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  width: 23px;
+  height: 22px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.main-nav__toggle-icon {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $lightblue;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    display: block;
+    background-color: $lightblue;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
+  }
 }
