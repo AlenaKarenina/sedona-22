@@ -6,6 +6,7 @@
   min-width: 280px;
   background-color: $lightblue;
   color: white;
+  font-family: $font;
   @include text-parametr(21px, 26px, 700);
   border: none;
   text-decoration: none;
