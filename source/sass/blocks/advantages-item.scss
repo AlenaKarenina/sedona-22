@@ -4,6 +4,7 @@
   padding-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
+  outline: 2px solid yellow;
 
   &--city,
   &--bridge {
@@ -21,6 +22,7 @@
   &--bridge {
     padding-top: 39px;
   }
+
 }
 
 .advantages-item__title {

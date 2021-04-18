@@ -1,3 +1,7 @@
+.advantages {
+  outline: 2px solid orange;
+}
+
 .advantages__list {
   @include list-style-none;
 }
