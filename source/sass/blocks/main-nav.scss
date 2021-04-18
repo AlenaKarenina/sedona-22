@@ -1,0 +1,21 @@
+.main-nav {
+  display: none;
+  &--open {
+    display: block;
+  }
+}
+
+.main-nav__list {
+  @include list-style-none;
+}
+
+.main-nav__item {
+  background-color: $lightblue;
+  padding: 10px 0 5px;
+}
+
+.main-nav__link {
+  color: white;
+  @include text-parametr(18px, 40px, 700);
+  text-decoration: none;
+}

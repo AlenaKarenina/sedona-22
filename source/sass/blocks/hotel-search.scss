@@ -1,0 +1,21 @@
+.hotel-search {
+  padding-top: 33px;
+}
+
+.hotel-search__title {
+  marin-top: 0;
+  margin-bottom: 24px;
+  @include text-parametr(21px, 26px, 700);
+}
+
+.hotel-search__text {
+  margin-top: 0;
+  margin-bottom: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @include text-parametr(14px, 26px, 400);
+}
+
+.hotel-search__button {
+  margin-bottom: 49px;
+}

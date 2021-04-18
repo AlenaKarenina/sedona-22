@@ -1,0 +1,19 @@
+.intro {
+  background-color: $lightblue;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--index {
+    padding: 90px 0 85px 0;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: center;
+    width: 282px;
+    height: 214px;
+  }
+}

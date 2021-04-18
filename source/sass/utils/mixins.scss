@@ -1,0 +1,11 @@
+@mixin text-parametr ($font-size: 14px, $line-height: 24px, $font-weight: 400) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin list-style-none {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

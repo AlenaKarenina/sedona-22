@@ -1,0 +1,8 @@
+.developing {
+  display: inline-flex;
+}
+
+.developing__text {
+  @include text-parametr(14px, 35px, 400);
+  margin-right: 12px;
+}

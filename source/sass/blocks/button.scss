@@ -1,0 +1,16 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  min-width: 280px;
+  background-color: $lightblue;
+  color: white;
+  @include text-parametr(21px, 26px, 700);
+  border: none;
+  text-decoration: none;
+  outline: none;
+  transition: .3s;
+  cursor: pointer;
+  text-transform: uppercase;
+}
