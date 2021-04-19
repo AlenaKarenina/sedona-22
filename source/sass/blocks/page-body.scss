@@ -1,0 +1,9 @@
+.page-body {
+  min-width: 320px;
+  font-family: $font;
+  @include text-parametr();
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  background-color: $gray;
+}

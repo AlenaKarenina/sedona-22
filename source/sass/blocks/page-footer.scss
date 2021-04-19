@@ -1,0 +1,17 @@
+.page-footer {
+  padding: 38px 0 23px;
+  outline: 2px solid blue;
+}
+
+.page-footer__social {
+  margin-bottom: 40px;
+}
+
+.page-footer__hashtag {
+  @include text-parametr(21px, 26px, 700);
+  margin: 0 0 33px;
+}
+
+.page-footer__developing {
+  margin-top: 40px;
+}

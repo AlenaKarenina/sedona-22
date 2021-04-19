@@ -1,0 +1,23 @@
+.recommendation {
+  @include list-style-none;
+  padding: 35px 0;
+  background-color: white;
+  color: black;
+  text-align: left;
+  outline: 2px solid blue;
+}
+
+.recommendation__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  @include text-parametr(18px, 26px, 700);
+}
+
+.recommendation__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.recommendation__item:not(:last-child) {
+  margin-bottom: 26px;
+}

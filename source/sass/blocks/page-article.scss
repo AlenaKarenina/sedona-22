@@ -1,0 +1,15 @@
+.page-article {
+  text-align: center;
+  padding: 32px 0 27px;
+  outline: 2px solid black;
+}
+
+.page-article__title {
+  @include text-parametr(18px, 26px, 700);
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.page-article__text {
+  margin: 0;
+}
