@@ -1,0 +1,11 @@
+.radio-button {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  text-align: left;
+  outline: 2px solid blue;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}

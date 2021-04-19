@@ -1,0 +1,32 @@
+.feedback {
+  outline: 1px solid blue;
+}
+
+.feedback__legend {
+  padding-top: 20px;
+
+  @include text-parametr(18px, 26px, 700);
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 48px;
+}
+
+.feedback__item {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  outline: 1px solid gray;
+}
+
+.feedback__note {
+  display: none;
+}
+
+.feedback__submit {
+  margin-left: auto;
+  margin-right: auto;
+}
