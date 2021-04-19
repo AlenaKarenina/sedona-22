@@ -1,4 +1,4 @@
-@import "vendors/normalize.scss";
+//@import "vendors/normalize.scss";
 @import "common/variables.scss";
 @import "common/fonts.scss";
 @import "common/base.scss";
@@ -19,5 +19,9 @@
 @import "blocks/hotel-search.scss";
 @import "blocks/social.scss";
 @import "blocks/developing.scss";
-@import "blocks/visually-hidden";
-@import "blocks/button";
+@import "blocks/visually-hidden.scss";
+@import "blocks/button.scss";
+@import "blocks/feedback.scss";
+@import "blocks/field.scss";
+@import "blocks/radio-button.scss";
+@import "blocks/checkbox.scss";

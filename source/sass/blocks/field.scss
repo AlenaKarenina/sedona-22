@@ -1,0 +1,43 @@
+.field {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  outline: 2px solid blue;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
+  &--contacts {
+    flex-direction: column;
+
+    .field__label {
+      margin-bottom: 8px;
+    }
+  }
+
+  &--textarea {
+    margin-bottom: 26px;
+  }
+}
+
+.field__label {
+  margin-right: 14px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.field__input {
+  width: 100%;
+  padding: 18px 22px 14px;
+  background: $light;
+  color: black;
+  border: none;
+  font-family: $font;
+
+  @include text-parametr(18px, 26px, 700);
+
+  &--textarea {
+    min-height: 160px;
+  }
+}
