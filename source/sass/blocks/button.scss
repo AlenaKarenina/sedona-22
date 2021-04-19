@@ -1,17 +1,16 @@
 .button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 58px;
+  display: inline-block;
+  vertical-align: top;
   min-width: 280px;
+  padding: 17px 32px 15px;
+  font-family: $font;
+
+  @include text-parametr(21px, 26px, 700);
   background-color: $lightblue;
   color: white;
-  font-family: $font;
-  @include text-parametr(21px, 26px, 700);
   border: none;
   text-decoration: none;
   outline: none;
-  transition: .3s;
   cursor: pointer;
   text-transform: uppercase;
 }

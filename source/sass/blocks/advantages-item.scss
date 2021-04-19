@@ -1,18 +1,18 @@
 .advantages-item {
-  background-color: $lightgray;
   padding-top: 26px;
   padding-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: $lightgray;
   outline: 2px solid yellow;
 
   &--city,
   &--bridge {
-    background-color: $lightblue;
-    color: white;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
+    background-color: $lightblue;
+    color: white;
   }
 
   &--city {
@@ -22,7 +22,6 @@
   &--bridge {
     padding-top: 39px;
   }
-
 }
 
 .advantages-item__title {

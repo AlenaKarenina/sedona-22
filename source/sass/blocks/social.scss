@@ -1,6 +1,7 @@
 .social {
   display: flex;
   justify-content: center;
+
   @include list-style-none;
   outline: 2px solid green;
 }

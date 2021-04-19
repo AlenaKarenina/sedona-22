@@ -5,6 +5,7 @@
 
 .main-nav__list {
   display: none;
+
   @include list-style-none;
 }
 
@@ -15,6 +16,7 @@
 
 .main-nav__link {
   color: white;
+
   @include text-parametr(18px, 40px, 700);
   text-decoration: none;
 }
@@ -40,9 +42,9 @@
   height: 4px;
   background-color: $lightblue;
 
-  &:before,
-  &:after {
-    content: '';
+  &::before,
+  &::after {
+    content: "";
     position: absolute;
     left: 0;
     width: 100%;
@@ -51,11 +53,11 @@
     background-color: $lightblue;
   }
 
-  &:before {
+  &::before {
     top: 0;
   }
 
-  &:after {
+  &::after {
     bottom: 0;
   }
 }
