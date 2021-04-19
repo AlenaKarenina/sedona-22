@@ -2,12 +2,6 @@
   display: inline-block;
   vertical-align: top;
   width: 100%;
-  padding-top: 14px;
-  padding-bottom: 14px;
   text-align: left;
   outline: 2px solid blue;
-
-  &:not(:last-child) {
-    margin-bottom: 16px;
-  }
 }

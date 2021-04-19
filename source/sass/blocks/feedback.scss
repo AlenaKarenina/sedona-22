@@ -28,3 +28,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.feedback__field {
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
