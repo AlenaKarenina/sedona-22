@@ -1,0 +1,35 @@
+.image-card {
+  padding-top: 22px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: 1px solid red;
+  text-align: left;
+}
+
+.image-card__image-wrapper {
+  display: block;
+  height: 280px;
+}
+
+.image-card__name {
+  margin-bottom: 2px;
+  margin-top: 11px;
+
+  @include text-parametr(14px, 24px, 700);
+}
+
+.image-card__author {
+  margin-bottom: 13px;
+  margin-top: 0;
+
+  @include text-parametr(14px, 24px, 400);
+  text-transform: none;
+}
+
+.image-card__like {
+  position: relative;
+  padding-left: 37px;
+
+  @include text-parametr(14px, 24px, 700);
+}
