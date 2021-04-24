@@ -39,6 +39,7 @@
 
   @include miw(768) {
     color: $font-color;
+
     @include text-parametr(14px, 26px, 700);
   }
 }

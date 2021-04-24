@@ -11,7 +11,7 @@
 }
 
 @mixin miw($width) {
-    @media (min-width: $width + "px") {
-        @content;
-    }
+  @media (min-width: $width + "px") {
+    @content;
+  }
 }
