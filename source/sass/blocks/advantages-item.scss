@@ -4,10 +4,11 @@
   padding-left: 20px;
   padding-right: 20px;
   background-color: $lightgray;
-  outline: 2px solid yellow;
 
   &--city,
   &--bridge {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
@@ -17,11 +18,27 @@
 
   &--city {
     padding-top: 55px;
+
+    @include miw(768) {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+    }
   }
 
   &--bridge {
     padding-top: 39px;
+
+    @include miw(768) {
+      width: 100%;
+      flex-direction: row-reverse;
+      align-items: center;
+      padding: 0;
+    }
   }
+
+
 }
 
 .advantages-item__title {
@@ -47,5 +64,9 @@
     height: 100%;
     object-position: center;
     object-fit: contain;
+  }
+
+  @include miw(768) {
+    margin: 0;
   }
 }

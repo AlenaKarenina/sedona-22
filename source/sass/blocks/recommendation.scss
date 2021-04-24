@@ -1,11 +1,17 @@
 .recommendation {
-  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
 
   @include list-style-none;
+  padding: 35px 0;
   background-color: white;
   color: $font-color;
   text-align: left;
-  outline: 2px solid blue;
+
+  @include miw(768) {
+    flex-direction: row;
+    text-align: center;
+  }
 }
 
 .recommendation__title {

@@ -1,17 +1,34 @@
 .main-nav {
   min-height: 56px;
-  outline: 2px solid green;
 }
 
 .main-nav__list {
   display: none;
 
   @include list-style-none;
+
+  @include miw(768) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .main-nav__item {
+  width: 100%;
   background-color: $lightblue;
   padding: 10px 0 5px;
+
+  @include miw(768) {
+    background-color: $white;
+    width: 20%;
+    padding: 16px 0 14px;
+  }
+
+  &:nth-child(2) {
+    @include miw(768) {
+      margin-right: 20%;
+    }
+  }
 }
 
 .main-nav__link {
@@ -19,6 +36,11 @@
 
   @include text-parametr(18px, 40px, 700);
   text-decoration: none;
+
+  @include miw(768) {
+    color: $font-color;
+    @include text-parametr(14px, 26px, 700);
+  }
 }
 
 .main-nav__toggle {
@@ -34,6 +56,10 @@
   border: none;
   outline: none;
   cursor: pointer;
+
+  @include miw(768) {
+    display: none;
+  }
 }
 
 .main-nav__toggle-icon {
