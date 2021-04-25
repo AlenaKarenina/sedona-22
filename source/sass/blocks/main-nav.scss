@@ -54,6 +54,7 @@
   border: none;
   outline: none;
   cursor: pointer;
+  display: none;
 
   @include miw(768) {
     display: none;
@@ -62,12 +63,15 @@
 
 .main-nav {
   position: relative;
-  min-height: 56px;
   z-index: 1;
 
   &--open {
     .main-nav__list {
       display: flex;
+    }
+
+    .main-nav__toggle {
+      display: block;
     }
   }
 }
