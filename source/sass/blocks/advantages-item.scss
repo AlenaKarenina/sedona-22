@@ -47,6 +47,7 @@
 .advantages-item__title {
   margin-top: 0;
   margin-bottom: 10px;
+
   @include text-parametr(14px, 21px, 700);
 
   @include miw(768) {
