@@ -72,6 +72,10 @@
 
     .main-nav__toggle {
       display: block;
+
+      @include miw(768) {
+        display: none;
+      }
     }
   }
 }

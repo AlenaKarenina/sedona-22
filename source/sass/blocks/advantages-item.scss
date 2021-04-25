@@ -35,12 +35,11 @@
   }
 
   @include miw(768) {
-    width: 512px;
+    width: 66.67%;
     margin: 0;
   }
 
   @include miw(1200) {
-    width: 800px;
     height: 256px;
   }
 }
@@ -50,7 +49,7 @@
 
   @include miw(768) {
     padding: 43px 32px;
-    max-width: 256px;
+    width: 33.33%;
   }
 
   @include miw(1200) {
@@ -85,7 +84,7 @@
     @include miw(768) {
       width: 100%;
       align-items: center;
-      justify-content: space-between
+      justify-content: space-between;
       min-height: 256px;
     }
   }
