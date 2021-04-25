@@ -1,54 +1,8 @@
-.advantages-item {
-  padding: 26px 20px 24px;
-  background-color: $lightgray;
-
-  @include miw(768) {
-    padding: 42px 33px 42px;
-  }
-
-  @include miw(1200) {
-    padding: 43px 42px 41px;
-  }
-
-  &--city,
-  &--bridge {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    background-color: $lightblue;
-    color: $white;
-  }
-
-  &--city {
-    padding-top: 55px;
-
-    @include miw(768) {
-      width: 100%;
-      flex-direction: row;
-      align-items: center;
-      padding: 0;
-    }
-  }
-
-  &--bridge {
-    padding-top: 39px;
-
-    @include miw(768) {
-      width: 100%;
-      flex-direction: row-reverse;
-      align-items: center;
-      padding: 0;
-    }
-  }
-}
-
 .advantages-item__title {
   margin-top: 0;
   margin-bottom: 10px;
 
-  @include text-parametr(14px, 21px, 700);
+  @include text-parametr(18px, 21px, 700);
 
   @include miw(768) {
     @include text-parametr(21px, 24px, 700);
@@ -97,5 +51,57 @@
   @include miw(1200) {
     padding: 0 52px;
     max-width: 400px;
+  }
+}
+
+.advantages-item {
+  padding: 26px 20px 24px;
+  background-color: $lightgray;
+
+  @include miw(768) {
+    padding: 42px 33px 42px;
+  }
+
+  @include miw(1200) {
+    padding: 43px 42px 41px;
+  }
+
+  &--city,
+  &--bridge {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: $lightblue;
+    color: $white;
+  }
+
+  &--city {
+    padding-top: 55px;
+
+    @include miw(768) {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+    }
+  }
+
+  &--bridge {
+    padding-top: 39px;
+
+    @include miw(768) {
+      width: 100%;
+      flex-direction: row-reverse;
+      align-items: center;
+      padding: 0;
+    }
+
+    .advantages-item__title {
+      @include miw(1200) {
+        padding: 0 64px;
+      }
+    }
   }
 }
