@@ -1,12 +1,27 @@
 .page-article {
   text-align: center;
   padding: 32px 10px 27px;
+
+  @include miw(768) {
+    padding: 43px 10px 52px;
+  }
+
+  @include miw(1200) {
+    padding: 55px 10px 41px;
+  }
 }
 
 .page-article__title {
   @include text-parametr(18px, 26px, 700);
   margin-top: 0;
   margin-bottom: 30px;
+
+  @include miw(768) {
+    @include text-parametr(21px, 26px, 700);
+    max-width: 483px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .page-article__text {

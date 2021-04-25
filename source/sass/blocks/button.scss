@@ -13,4 +13,14 @@
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $blue;
+  }
+
+
+  @include miw(768) {
+    min-width: 458px;
+    padding: 17px 121px 15px;
+  }
 }
