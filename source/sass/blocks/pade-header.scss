@@ -23,7 +23,7 @@
   border: none;
   width: 23px;
   height: 22px;
-  background: url("../img/icon-menu.svg") 0 0 / cover no-repeat;
+  background: url("../img/icon-menu.svg") 0 0 no-repeat;
 
   @include miw(768) {
     display: none;
