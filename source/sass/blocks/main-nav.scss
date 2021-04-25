@@ -1,11 +1,6 @@
-.main-nav {
-  position: relative;
-  min-height: 56px;
-  z-index: 1;
-}
-
 .main-nav__list {
   display: none;
+  flex-direction: column;
 
   @include list-style-none;
 
@@ -19,11 +14,13 @@
   width: 100%;
   background-color: $lightblue;
   padding: 10px 0 5px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 50%), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @include miw(768) {
     background-color: $white;
     width: 20%;
     padding: 16px 0 14px;
+    box-shadow: none;
   }
 
   &:nth-child(2) {
@@ -51,11 +48,9 @@
   top: 17px;
   right: 17px;
   width: 23px;
-  height: 22px;
+  height: 23px;
   padding: 0;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
+  background: url("../img/icon-close.svg") 0 0 no-repeat;
   border: none;
   outline: none;
   cursor: pointer;
@@ -65,28 +60,14 @@
   }
 }
 
-.main-nav__toggle-icon {
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: $lightblue;
+.main-nav {
+  position: relative;
+  min-height: 56px;
+  z-index: 1;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    display: block;
-    background-color: $lightblue;
-  }
-
-  &::before {
-    top: 0;
-  }
-
-  &::after {
-    bottom: 0;
+  &--open {
+    .main-nav__list {
+      display: flex;
+    }
   }
 }

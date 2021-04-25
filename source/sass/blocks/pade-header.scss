@@ -1,11 +1,31 @@
 .pade-header {
+  display: flex;
+  flex-direction: column-reverse;
   position: relative;
 }
 
 .pade-header__logo {
   display: block;
   position: absolute;
-  top: 0;
+  bottom: -33px;
   left: 50%;
   transform: translateX(-50%);
+
+  @include miw(768) {
+    bottom: auto;
+    top: 0;
+  }
+}
+
+.page-header__toggle {
+  margin: 17px 20px 17px auto;
+  outline: none;
+  border: none;
+  width: 23px;
+  height: 22px;
+  background: url("../img/icon-menu.svg") 0 0 / cover no-repeat;
+
+  @include miw(768) {
+    display: none;
+  }
 }
