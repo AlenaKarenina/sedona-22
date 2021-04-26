@@ -5,6 +5,10 @@
 
   &:not(:last-of-type) {
     margin-bottom: 20px;
+
+    @include miw(1200) {
+      margin-bottom: 0;
+    }
   }
 
   &--contacts {
@@ -12,6 +16,10 @@
 
     .field__label {
       margin-bottom: 8px;
+    }
+
+    @include miw(1200) {
+      flex-direction: row;
     }
   }
 

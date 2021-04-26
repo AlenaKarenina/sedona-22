@@ -2,31 +2,103 @@
   padding-top: 20px;
 
   @include text-parametr(18px, 26px, 700);
+
+  @include miw(768) {
+    @include text-parametr(21px, 26px, 700);
+  }
 }
 
 .feedback__form {
   padding-bottom: 48px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include miw(768) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @include miw(1200) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .feedback__item {
   padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 25px;
-  outline: 1px solid gray;
+
+  &--name {
+    @include miw(768) {
+      width: 50%;
+      order: 1;
+    }
+  }
+
+  &--contacts {
+    @include miw(768) {
+      width: 100%;
+      order: 2;
+    }
+
+    @include miw(1200) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &--impression {
+    @include miw(768) {
+      width: 50%;
+      order: 0;
+    }
+  }
+
+  &--visited {
+    @include miw(768) {
+      width: 100%;
+      order: 3;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &--emotions {
+    @include miw(768) {
+      width: 100%;
+      order: 4;
+    }
+  }
 }
 
 .feedback__note {
   display: none;
+  order: 6;
+
+  @include miw(768) {
+    display: block;
+  }
 }
 
 .feedback__submit {
   margin-left: auto;
   margin-right: auto;
+  order: 5;
+
+  @include miw(768) {
+    margin-left: 0;
+  }
 }
 
 .feedback__field {
   &:not(:last-child) {
     margin-bottom: 16px;
+
+    @include miw(1200) {
+      margin-bottom: 0;
+    }
   }
 }
