@@ -1,11 +1,22 @@
-.advantages {
-  outline: 2px solid orange;
-}
-
 .advantages__list {
   @include list-style-none;
+
+  @include miw(768) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item {
   @include list-style-none;
+
+  @include miw(768) {
+    width: 33.33%;
+  }
+
+  &--city {
+    @include miw(768) {
+      width: 100%;
+    }
+  }
 }

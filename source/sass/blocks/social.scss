@@ -3,7 +3,6 @@
   justify-content: center;
 
   @include list-style-none;
-  outline: 2px solid green;
 }
 
 .social__item {
@@ -11,8 +10,14 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 46px;
   height: 48px;
   background-color: $lightblue;
+
+  &:hover {
+    background-color: $blue;
+  }
 }

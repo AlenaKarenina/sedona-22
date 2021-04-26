@@ -1,17 +1,33 @@
-.main-nav {
-  min-height: 56px;
-  outline: 2px solid green;
-}
-
 .main-nav__list {
   display: none;
+  flex-direction: column;
 
   @include list-style-none;
+
+  @include miw(768) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .main-nav__item {
+  width: 100%;
   background-color: $lightblue;
   padding: 10px 0 5px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 50%), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  @include miw(768) {
+    background-color: $white;
+    width: 20%;
+    padding: 16px 0 14px;
+    box-shadow: none;
+  }
+
+  &:nth-child(2) {
+    @include miw(768) {
+      margin-right: 20%;
+    }
+  }
 }
 
 .main-nav__link {
@@ -19,6 +35,12 @@
 
   @include text-parametr(18px, 40px, 700);
   text-decoration: none;
+
+  @include miw(768) {
+    color: $font-color;
+
+    @include text-parametr(14px, 26px, 700);
+  }
 }
 
 .main-nav__toggle {
@@ -26,38 +48,34 @@
   top: 17px;
   right: 17px;
   width: 23px;
-  height: 22px;
+  height: 23px;
   padding: 0;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
+  background: url("../img/icon-close.svg") 0 0 no-repeat;
   border: none;
   outline: none;
   cursor: pointer;
+  display: none;
+
+  @include miw(768) {
+    display: none;
+  }
 }
 
-.main-nav__toggle-icon {
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: $lightblue;
+.main-nav {
+  position: relative;
+  z-index: 1;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    display: block;
-    background-color: $lightblue;
-  }
+  &--open {
+    .main-nav__list {
+      display: flex;
+    }
 
-  &::before {
-    top: 0;
-  }
+    .main-nav__toggle {
+      display: block;
 
-  &::after {
-    bottom: 0;
+      @include miw(768) {
+        display: none;
+      }
+    }
   }
 }

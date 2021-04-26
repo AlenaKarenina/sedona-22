@@ -1,14 +1,15 @@
-.video {
+.video__player {
+  position: relative;
   padding-bottom: 49px;
 }
 
 .video__controls {
-  position: relative;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
   height: 111px;
-  margin-top: -45px;
   margin-bottom: 0;
-  margin-left: 20px;
-  margin-right: 20px;
   padding-top: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -63,4 +64,20 @@
   border: 0;
   fill: $video-button;
   cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+
+  &--replay {
+    flex-grow: 2;
+  }
+
+  &--subtitles {
+    margin-left: auto;
+    margin-right: 31px;
+  }
+
+  &--fullscreen {
+    margin-left: auto;
+  }
 }
