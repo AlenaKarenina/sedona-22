@@ -1,5 +1,6 @@
 .advantages__list {
   @include list-style-none;
+  counter-reset: list;
 
   @include miw(768) {
     display: flex;

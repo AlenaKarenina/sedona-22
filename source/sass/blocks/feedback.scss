@@ -1,5 +1,6 @@
 .feedback__legend {
   padding-top: 20px;
+  text-align: center;
 
   @include text-parametr(18px, 26px, 700);
 
@@ -12,6 +13,7 @@
   padding-bottom: 48px;
   padding-left: 20px;
   padding-right: 20px;
+  text-align: left;
 
   @include miw(768) {
     display: flex;
@@ -23,54 +25,6 @@
   @include miw(1200) {
     padding-left: 120px;
     padding-right: 120px;
-  }
-}
-
-.feedback__item {
-  padding-top: 20px;
-  padding-bottom: 25px;
-
-  &--name {
-    @include miw(768) {
-      width: 50%;
-      order: 1;
-    }
-  }
-
-  &--contacts {
-    @include miw(768) {
-      width: 100%;
-      order: 2;
-    }
-
-    @include miw(1200) {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-
-  &--impression {
-    @include miw(768) {
-      width: 50%;
-      order: 0;
-    }
-  }
-
-  &--visited {
-    @include miw(768) {
-      width: 100%;
-      order: 3;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-
-  &--emotions {
-    @include miw(768) {
-      width: 100%;
-      order: 4;
-    }
   }
 }
 
@@ -93,12 +47,99 @@
   }
 }
 
-.feedback__field {
-  &:not(:last-child) {
-    margin-bottom: 16px;
+.feedback__item {
+  padding-top: 20px;
+  padding-bottom: 25px;
+
+  &--name {
+    .feedback__field {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @include miw(768) {
+      width: 50%;
+      order: 1;
+      padding-left: 25px;
+    }
+  }
+
+  &--contacts {
+    .feedback__field {
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+    }
+
+    @include miw(768) {
+      width: 100%;
+      order: 2;
+
+      .feedback__field {
+        &:not(:last-child) {
+          margin-bottom: 25px;
+        }
+      }
+    }
 
     @include miw(1200) {
-      margin-bottom: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .feedback__field:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &--impression {
+    .feedback__field {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+
+    @include miw(768) {
+      width: 50%;
+      order: 0;
+      border-right: 1px solid #dbdbdb;
+
+      .feedback__field {
+        &:not(:last-child) {
+          margin-bottom: 22px;
+        }
+      }
+    }
+  }
+
+  &--visited {
+    .feedback__field {
+      &:not(:last-child) {
+        margin-bottom: 23px;
+      }
+    }
+
+    @include miw(768) {
+      width: 100%;
+      order: 3;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include miw(1200) {
+      .feedback__field {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &--emotions {
+    @include miw(768) {
+      width: 100%;
+      order: 4;
     }
   }
 }

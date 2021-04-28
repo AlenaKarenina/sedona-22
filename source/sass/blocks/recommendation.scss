@@ -3,7 +3,7 @@
   flex-direction: column;
 
   @include list-style-none;
-  padding: 35px 0;
+  padding: 35px 21px;
   background-color: white;
   color: $font-color;
   text-align: left;
@@ -35,13 +35,13 @@
 
 .recommendation__item {
   position: relative;
-  padding: 0 21px 0 69px;
+  padding: 0 21px 0 48px;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 21px;
+    left: 0;
     display: inline-block;
     vertical-align: top;
     background-size: cover;

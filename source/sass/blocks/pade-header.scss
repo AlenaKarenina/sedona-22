@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column-reverse;
   position: relative;
+
+  @include miw(768) {
+    padding: 16px 0 14px;
+  }
 }
 
 .pade-header__logo {
@@ -10,6 +14,7 @@
   bottom: -33px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
 
   @include miw(768) {
     bottom: auto;

@@ -1,8 +1,8 @@
 .button {
   display: inline-block;
-  vertical-align: top;
-  min-width: 280px;
-  padding: 17px 32px 15px;
+  vertical-align: middle;
+  min-width: 100px;
+  padding: 17px 47px 15px;
   font-family: $font;
 
   @include text-parametr(21px, 26px, 700);
@@ -17,7 +17,6 @@
   &:hover {
     background-color: $blue;
   }
-
 
   @include miw(768) {
     min-width: 458px;

@@ -20,6 +20,11 @@
 
     @include miw(1200) {
       flex-direction: row;
+
+      .field__label {
+        margin-bottom: 0;
+        white-space: nowrap;
+      }
     }
   }
 
@@ -32,13 +37,18 @@
   margin-right: 14px;
   display: inline-block;
   vertical-align: top;
+
+  &-word {
+    @include miw(1200) {
+      display: none;
+    }
+  }
 }
 
 .field__input {
   width: 100%;
   padding: 18px 22px 14px;
   background: $light;
-  color: $font-color;
   border: none;
   font-family: $font;
 
@@ -46,5 +56,9 @@
 
   &--textarea {
     min-height: 160px;
+  }
+
+  &::placeholder {
+    color: $font-color;
   }
 }

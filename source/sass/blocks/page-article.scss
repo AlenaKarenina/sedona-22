@@ -1,13 +1,15 @@
 .page-article__title {
-  @include text-parametr(18px, 26px, 700);
   margin-top: 0;
   margin-bottom: 30px;
 
+  @include text-parametr(18px, 26px, 700);
+
   @include miw(768) {
-    @include text-parametr(21px, 26px, 700);
     max-width: 483px;
     margin-left: auto;
     margin-right: auto;
+
+    @include text-parametr(21px, 26px, 700);
   }
 }
 
@@ -28,7 +30,6 @@
   }
 
   &--inner {
-
     @include miw(768) {
       width: 100%;
       max-width: 460px;
