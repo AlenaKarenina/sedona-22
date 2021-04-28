@@ -1,5 +1,7 @@
 .feedback__legend {
-  padding-top: 20px;
+  display: block;
+  float: left;
+  width: 100%;
   text-align: center;
 
   @include text-parametr(18px, 26px, 700);
