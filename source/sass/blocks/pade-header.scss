@@ -3,7 +3,7 @@
   flex-direction: column-reverse;
   position: relative;
 
-  @include miw(768) {
+  @include min(768) {
     padding: 16px 0 14px;
   }
 }
@@ -16,7 +16,7 @@
   transform: translateX(-50%);
   z-index: 2;
 
-  @include miw(768) {
+  @include min(768) {
     bottom: auto;
     top: 0;
   }
@@ -30,7 +30,7 @@
   height: 22px;
   background: url("../img/icon-menu.svg") 0 0 no-repeat;
 
-  @include miw(768) {
+  @include min(768) {
     display: none;
   }
 }

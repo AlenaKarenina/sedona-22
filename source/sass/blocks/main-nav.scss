@@ -4,7 +4,7 @@
 
   @include list-style-none;
 
-  @include miw(768) {
+  @include min(768) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -16,14 +16,14 @@
   background-color: $lightblue;
   box-shadow: 0 0 1px rgba(0, 0, 0, 50%), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
-  @include miw(768) {
+  @include min(768) {
     background-color: $white;
     width: 20%;
     box-shadow: none;
   }
 
   &:nth-child(2) {
-    @include miw(768) {
+    @include min(768) {
       margin-right: 20%;
     }
   }
@@ -37,7 +37,7 @@
   @include text-parametr(18px, 40px, 700);
   text-decoration: none;
 
-  @include miw(768) {
+  @include min(768) {
     color: $font-color;
     padding: 0;
 
@@ -59,7 +59,7 @@
   z-index: 2;
   display: none;
 
-  @include miw(768) {
+  @include min(768) {
     display: none;
   }
 }
@@ -76,7 +76,7 @@
     .main-nav__toggle {
       display: block;
 
-      @include miw(768) {
+      @include min(768) {
         display: none;
       }
     }

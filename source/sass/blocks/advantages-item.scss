@@ -14,12 +14,12 @@
     @include text-parametr();
   }
 
-  @include miw(768) {
+  @include min(768) {
     @include text-parametr(21px, 24px, 700);
     padding: 0 24px;
   }
 
-  @include miw(1200) {
+  @include min(1200) {
     padding: 0 80px;
   }
 }
@@ -39,7 +39,7 @@
     object-fit: cover;
   }
 
-  @include miw(768) {
+  @include min(768) {
     width: 66.67%;
     height: auto;
     margin: 0;
@@ -49,12 +49,12 @@
 .advantages-item__content {
   padding: 0 12px;
 
-  @include miw(768) {
+  @include min(768) {
     padding: 40px 32px 44px;
     width: 33.33%;
   }
 
-  @include miw(1200) {
+  @include min(1200) {
     padding: 47px 52px 57px;
     max-width: 400px;
   }
@@ -64,11 +64,11 @@
   padding: 26px 20px 24px;
   background-color: $lightgray;
 
-  @include miw(768) {
+  @include min(768) {
     padding: 42px 33px 42px;
   }
 
-  @include miw(1200) {
+  @include min(1200) {
     padding: 43px 42px 41px;
   }
 
@@ -80,7 +80,7 @@
     background-color: $lightblue;
     color: $white;
 
-    @include miw(768) {
+    @include min(768) {
       width: 100%;
       justify-content: space-between;
     }
@@ -91,7 +91,7 @@
       padding-top: 55px;
     }
 
-    @include miw(768) {
+    @include min(768) {
       flex-direction: row;
     }
   }
@@ -101,7 +101,7 @@
       padding-top: 39px;
     }
 
-    @include miw(768) {
+    @include min(768) {
       flex-direction: row-reverse;
 
       .advantages-item__content {
@@ -109,7 +109,7 @@
       }
     }
 
-    @include miw(1200) {
+    @include min(1200) {
       .advantages-item__title {
         padding: 0 36px;
       }

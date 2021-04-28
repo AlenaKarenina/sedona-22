@@ -18,8 +18,11 @@
     background-color: $blue;
   }
 
-  @include miw(768) {
-    min-width: 458px;
+  @include min(768) {
+    padding: 17px 71px 15px;
+  }
+
+  @include min(1200) {
     padding: 17px 121px 15px;
   }
 }

@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @include miw(768) {
+  @include min(768) {
     background-image: url("../img/back-desktop.jpg");
   }
 
@@ -18,7 +18,7 @@
   &--index {
     padding: 90px 0 85px 0;
 
-    @include miw(768) {
+    @include min(768) {
       padding: 78px 0 90px 0;
     }
 
@@ -26,7 +26,7 @@
       width: 282px;
       height: 214px;
 
-      @include miw(768) {
+      @include min(768) {
         width: 461px;
         height: 350px;
       }
@@ -36,7 +36,7 @@
   &--inner {
     padding: 52px 0 67px 0;
 
-    @include miw(768) {
+    @include min(768) {
       padding: 95px 0 117px 0;
       background-position: center 95%;
     }
@@ -45,7 +45,7 @@
       width: 229px;
       height: 39px;
 
-      @include miw(768) {
+      @include min(768) {
         width: 457px;
         height: 78px;
       }

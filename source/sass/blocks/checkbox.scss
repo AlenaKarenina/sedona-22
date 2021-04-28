@@ -2,12 +2,48 @@
   display: inline-block;
   vertical-align: top;
   width: 100%;
+  min-width: 200px;
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-left: 80px;
   text-align: left;
+  cursor: pointer;
 
-  @include miw(768) {
+  @include min(768) {
     width: auto;
+  }
+}
+
+.checkbox__label {
+  position: relative;
+  padding-left: 80px;
+
+  @include text-parametr(18px, 26px, 700);
+  text-transform: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 51px;
+    height: 51px;
+    border-radius: 2px;
+    background-color: $light;
+  }
+}
+
+.checkbox__input {
+  &:checked + span {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 23px;
+      height: 16px;
+      background: url("../img/tick.svg") 0 0 no-repeat;
+    }
   }
 }

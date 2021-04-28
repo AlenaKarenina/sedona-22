@@ -4,7 +4,7 @@
 
   @include text-parametr(18px, 26px, 700);
 
-  @include miw(768) {
+  @include min(768) {
     @include text-parametr(21px, 26px, 700);
   }
 }
@@ -15,14 +15,15 @@
   padding-right: 20px;
   text-align: left;
 
-  @include miw(768) {
+  @include min(768) {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     padding-left: 60px;
     padding-right: 60px;
   }
 
-  @include miw(1200) {
+  @include min(1200) {
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -32,7 +33,7 @@
   display: none;
   order: 6;
 
-  @include miw(768) {
+  @include min(768) {
     display: block;
   }
 }
@@ -42,7 +43,7 @@
   margin-right: auto;
   order: 5;
 
-  @include miw(768) {
+  @include min(768) {
     margin-left: 0;
   }
 }
@@ -58,10 +59,15 @@
       }
     }
 
-    @include miw(768) {
+    @include min(768) {
       width: 50%;
       order: 1;
-      padding-left: 25px;
+      padding-left: 58px;
+
+      .feedback__legend {
+        text-align: left;
+        margin-bottom: 36px;
+      }
     }
   }
 
@@ -72,7 +78,7 @@
       }
     }
 
-    @include miw(768) {
+    @include min(768) {
       width: 100%;
       order: 2;
 
@@ -83,7 +89,7 @@
       }
     }
 
-    @include miw(1200) {
+    @include min(1200) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -101,7 +107,7 @@
       }
     }
 
-    @include miw(768) {
+    @include min(768) {
       width: 50%;
       order: 0;
       border-right: 1px solid #dbdbdb;
@@ -110,6 +116,11 @@
         &:not(:last-child) {
           margin-bottom: 22px;
         }
+      }
+
+      .feedback__legend {
+        text-align: left;
+        margin-bottom: 36px;
       }
     }
   }
@@ -121,25 +132,39 @@
       }
     }
 
-    @include miw(768) {
+    @include min(768) {
       width: 100%;
       order: 3;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+
+      .feedback__field {
+        &:nth-child(even) {
+          margin-right: 40px;
+        }
+      }
     }
 
-    @include miw(1200) {
+    @include min(1200) {
       .feedback__field {
         margin-bottom: 0;
+
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
       }
     }
   }
 
   &--emotions {
-    @include miw(768) {
+    @include min(768) {
       width: 100%;
       order: 4;
+
+      .feedback__legend {
+        margin-bottom: 36px;
+      }
     }
   }
 }

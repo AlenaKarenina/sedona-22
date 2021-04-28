@@ -8,7 +8,7 @@
   color: $font-color;
   text-align: left;
 
-  @include miw(768) {
+  @include min(768) {
     flex-direction: row;
     text-align: center;
     padding: 60px 0;
@@ -21,7 +21,7 @@
 
   @include text-parametr(18px, 26px, 700);
 
-  @include miw(768) {
+  @include min(768) {
     @include text-parametr(21px, 26px, 700);
   }
 }
@@ -48,17 +48,17 @@
     background-position: 0 0;
     background-repeat: no-repeat;
 
-    @include miw(768) {
+    @include min(768) {
       position: relative;
       left: auto;
     }
   }
 
-  @include miw(768) {
+  @include min(768) {
     padding: 0 36px;
   }
 
-  @include miw(1200) {
+  @include min(1200) {
     padding: 0 58px;
   }
 
@@ -70,7 +70,7 @@
       width: 39px;
       height: 37px;
 
-      @include miw(768) {
+      @include min(768) {
         width: 75px;
         height: 72px;
         margin-bottom: 26px;
@@ -86,14 +86,14 @@
       width: 32px;
       height: 38px;
 
-      @include miw(768) {
+      @include min(768) {
         width: 64px;
         height: 75px;
         margin-bottom: 26px;
       }
     }
 
-    @include miw(768) {
+    @include min(768) {
       order: 3;
     }
   }
@@ -106,14 +106,14 @@
       width: 38px;
       height: 34px;
 
-      @include miw(768) {
+      @include min(768) {
         width: 77px;
         height: 69px;
         margin-bottom: 26px;
       }
     }
 
-    @include miw(768) {
+    @include min(768) {
       order: 2;
     }
   }
@@ -121,7 +121,7 @@
   &:not(:last-child) {
     margin-bottom: 26px;
 
-    @include miw(768) {
+    @include min(768) {
       margin-bottom: 0;
     }
   }

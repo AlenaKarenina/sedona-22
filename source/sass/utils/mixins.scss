@@ -10,7 +10,7 @@
   margin: 0;
 }
 
-@mixin miw($width) {
+@mixin min($width) {
   @media (min-width: $width + "px") {
     @content;
   }
