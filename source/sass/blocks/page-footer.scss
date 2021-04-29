@@ -3,9 +3,13 @@
 
   @include min(768) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 38px 0 23px;
+    padding: 38px 60px 23px;
+  }
+
+  @include min(1200) {
+    padding: 38px 120px 23px;
   }
 }
 
