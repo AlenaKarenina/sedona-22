@@ -35,6 +35,7 @@
 
   &--inner {
     padding: 52px 0 67px 0;
+    background-position: center bottom;
 
     @include min(768) {
       padding: 95px 0 117px 0;

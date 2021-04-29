@@ -1,21 +1,26 @@
 .checkbox {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   width: 100%;
   min-width: 200px;
-  padding-top: 14px;
-  padding-bottom: 14px;
   text-align: left;
-  cursor: pointer;
 
   @include min(768) {
+    width: 50%;
+  }
+
+  @include min(1200) {
     width: auto;
   }
 }
 
 .checkbox__label {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
+  min-height: 55px;
+  min-width: 200px;
   padding-left: 80px;
+  padding-top: 14px;
 
   @include text-parametr(18px, 26px, 700);
   text-transform: none;
@@ -32,6 +37,18 @@
     background-color: $light;
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 23px;
+    height: 16px;
+    background: url("../img/tick.svg") 0 0 no-repeat;
+    opacity: 0;
+  }
+
   &:hover {
     &::before {
       background-color: $gray;
@@ -42,14 +59,7 @@
 .checkbox__input {
   &:checked + span {
     &::after {
-      content: "";
-      position: absolute;
-      left: 15px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 23px;
-      height: 16px;
-      background: url("../img/tick.svg") 0 0 no-repeat;
+      opacity: 1;
     }
   }
 }
