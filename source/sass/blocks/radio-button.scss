@@ -1,8 +1,57 @@
 .radio-button {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.radio-button__label {
+  position: relative;
+  min-height: 55px;
   display: inline-block;
   vertical-align: top;
-  width: 100%;
+  padding-left: 78px;
   padding-top: 14px;
-  padding-bottom: 14px;
-  text-align: left;
+
+  @include text-parametr(18px, 26px, 700);
+  text-transform: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: $light;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $dark;
+    opacity: 0;
+  }
+
+  &:hover {
+    &::before {
+      background-color: $gray;
+    }
+  }
+}
+
+.radio-button__input {
+  &:checked + span {
+    &::after {
+      opacity: 1;
+    }
+  }
 }

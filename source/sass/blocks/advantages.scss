@@ -1,7 +1,8 @@
 .advantages__list {
   @include list-style-none;
+  counter-reset: list;
 
-  @include miw(768) {
+  @include min(768) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -10,12 +11,12 @@
 .advantages__item {
   @include list-style-none;
 
-  @include miw(768) {
+  @include min(768) {
     width: 33.33%;
   }
 
   &--city {
-    @include miw(768) {
+    @include min(768) {
       width: 100%;
     }
   }

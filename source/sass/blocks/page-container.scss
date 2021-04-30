@@ -1,9 +1,14 @@
 .page-container {
   background-color: white;
+  width: 100%;
 
-  @include miw(1200) {
-    width: 1200px;
+  @include min(768) {
+    max-width: 768px;
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  }
+
+  @include min(1200) {
+    max-width: 1200px;
   }
 }

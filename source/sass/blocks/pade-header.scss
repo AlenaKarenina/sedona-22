@@ -2,16 +2,21 @@
   display: flex;
   flex-direction: column-reverse;
   position: relative;
+
+  @include min(768) {
+    padding: 16px 0 14px;
+  }
 }
 
 .pade-header__logo {
   display: block;
   position: absolute;
-  bottom: -33px;
+  bottom: -35px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
 
-  @include miw(768) {
+  @include min(768) {
     bottom: auto;
     top: 0;
   }
@@ -25,7 +30,7 @@
   height: 22px;
   background: url("../img/icon-menu.svg") 0 0 no-repeat;
 
-  @include miw(768) {
+  @include min(768) {
     display: none;
   }
 }

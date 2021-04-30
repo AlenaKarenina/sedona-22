@@ -4,40 +4,42 @@
 
   @include list-style-none;
 
-  @include miw(768) {
+  @include min(768) {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 .main-nav__item {
   width: 100%;
   background-color: $lightblue;
-  padding: 10px 0 5px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 50%), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
-  @include miw(768) {
+  @include min(768) {
     background-color: $white;
     width: 20%;
-    padding: 16px 0 14px;
     box-shadow: none;
   }
 
   &:nth-child(2) {
-    @include miw(768) {
+    @include min(768) {
       margin-right: 20%;
     }
   }
 }
 
 .main-nav__link {
+  display: block;
+  padding: 10px 0 5px;
   color: $white;
 
   @include text-parametr(18px, 40px, 700);
   text-decoration: none;
 
-  @include miw(768) {
+  @include min(768) {
     color: $font-color;
+    padding: 0;
 
     @include text-parametr(14px, 26px, 700);
   }
@@ -54,9 +56,10 @@
   border: none;
   outline: none;
   cursor: pointer;
+  z-index: 2;
   display: none;
 
-  @include miw(768) {
+  @include min(768) {
     display: none;
   }
 }
@@ -73,7 +76,7 @@
     .main-nav__toggle {
       display: block;
 
-      @include miw(768) {
+      @include min(768) {
         display: none;
       }
     }

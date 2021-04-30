@@ -1,22 +1,35 @@
 .field {
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: row;
 
-  &:not(:last-of-type) {
-    margin-bottom: 20px;
-  }
-
   &--contacts {
     flex-direction: column;
+    align-items: flex-start;
 
     .field__label {
       margin-bottom: 8px;
+      margin-right: 0;
+      padding-left: 24px;
     }
-  }
 
-  &--textarea {
-    margin-bottom: 26px;
+    @include min(1200) {
+      flex-direction: row;
+      align-items: center;
+
+      .field__label {
+        margin-bottom: 0;
+        margin-right: 16px;
+        padding-right: 0;
+        padding-left: 0;
+        white-space: nowrap;
+      }
+
+      .field__input {
+        max-width: 316px;
+      }
+    }
   }
 }
 
@@ -24,19 +37,39 @@
   margin-right: 14px;
   display: inline-block;
   vertical-align: top;
+
+  &-word {
+    @include min(1200) {
+      display: none;
+    }
+  }
 }
 
 .field__input {
   width: 100%;
-  padding: 18px 22px 14px;
+  padding: 16px 20px 12px;
   background: $light;
-  color: $font-color;
-  border: none;
+  border: 4px solid $light;
   font-family: $font;
 
   @include text-parametr(18px, 26px, 700);
 
   &--textarea {
     min-height: 160px;
+    resize: vertical;
+  }
+
+  &::placeholder {
+    color: $font-color;
+  }
+
+  &:hover {
+    background-color: $gray;
+    border-color: $gray;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $white;
   }
 }

@@ -1,8 +1,8 @@
 .button {
   display: inline-block;
-  vertical-align: top;
-  min-width: 280px;
-  padding: 17px 32px 15px;
+  vertical-align: middle;
+  min-width: 100px;
+  padding: 17px 47px 15px;
   font-family: $font;
 
   @include text-parametr(21px, 26px, 700);
@@ -18,9 +18,11 @@
     background-color: $blue;
   }
 
+  @include min(768) {
+    padding: 17px 71px 15px;
+  }
 
-  @include miw(768) {
-    min-width: 458px;
+  @include min(1200) {
     padding: 17px 121px 15px;
   }
 }

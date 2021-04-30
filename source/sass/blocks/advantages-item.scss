@@ -1,22 +1,27 @@
 .advantages-item__title {
+  position: relative;
   margin-top: 0;
-  margin-bottom: 10px;
 
   @include text-parametr(18px, 21px, 700);
 
-  @include miw(768) {
+  &::after {
+    counter-increment: list;
+    content: "— №" counter(list) " —";
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+    @include text-parametr();
+  }
+
+  @include min(768) {
     @include text-parametr(21px, 24px, 700);
     padding: 0 24px;
   }
 
-  @include miw(1200) {
+  @include min(1200) {
     padding: 0 80px;
   }
-}
-
-.advantages-item__number {
-  margin-top: 0;
-  margin-bottom: 12px;
 }
 
 .advantages-item__text {
@@ -34,26 +39,23 @@
     object-fit: cover;
   }
 
-  @include miw(768) {
+  @include min(768) {
     width: 66.67%;
+    height: auto;
     margin: 0;
-  }
-
-  @include miw(1200) {
-    height: 256px;
   }
 }
 
 .advantages-item__content {
   padding: 0 12px;
 
-  @include miw(768) {
-    padding: 43px 32px;
+  @include min(768) {
+    padding: 40px 32px 44px;
     width: 33.33%;
   }
 
-  @include miw(1200) {
-    padding: 16px 52px;
+  @include min(1200) {
+    padding: 47px 52px 57px;
     max-width: 400px;
   }
 }
@@ -62,11 +64,11 @@
   padding: 26px 20px 24px;
   background-color: $lightgray;
 
-  @include miw(768) {
+  @include min(768) {
     padding: 42px 33px 42px;
   }
 
-  @include miw(1200) {
+  @include min(1200) {
     padding: 43px 42px 41px;
   }
 
@@ -74,41 +76,46 @@
   &--bridge {
     display: flex;
     flex-direction: column;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
     background-color: $lightblue;
     color: $white;
-    min-height: 260px;
 
-    @include miw(768) {
+    @include min(768) {
       width: 100%;
-      align-items: center;
       justify-content: space-between;
-      min-height: 256px;
     }
   }
 
   &--city {
-    padding-top: 55px;
+    .advantages-item__content {
+      padding-top: 55px;
+    }
 
-    @include miw(768) {
+    @include min(768) {
       flex-direction: row;
-      padding: 0;
     }
   }
 
   &--bridge {
-    padding-top: 39px;
-
-    @include miw(768) {
-      flex-direction: row-reverse;
-      padding: 0;
+    .advantages-item__content {
+      padding-top: 39px;
     }
 
-    .advantages-item__title {
-      @include miw(1200) {
-        padding: 0 64px;
+    @include min(768) {
+      flex-direction: row-reverse;
+
+      .advantages-item__content {
+        padding: 43px 36px 41px;
+      }
+    }
+
+    @include min(1200) {
+      .advantages-item__title {
+        padding: 0 36px;
+      }
+
+      .advantages-item__content {
+        padding: 51px 78px 53px;
       }
     }
   }
