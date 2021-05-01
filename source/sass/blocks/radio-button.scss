@@ -1,6 +1,7 @@
 .radio-button {
   position: relative;
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   width: 100%;
   text-align: left;
 }
