@@ -68,11 +68,19 @@
       color: $lightblue;
     }
 
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
     &--active {
       color: $brown;
 
       &:hover {
         color: $darkbrown;
+      }
+
+      &:active {
+        color: rgba(118, 99, 87, 0.3);
       }
     }
   }
