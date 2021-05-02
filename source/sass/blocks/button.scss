@@ -18,6 +18,11 @@
     background-color: $blue;
   }
 
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $blue-2;
+  }
+
   @include min(768) {
     padding: 17px 71px 15px;
   }

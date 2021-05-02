@@ -55,21 +55,43 @@
   }
 
   @include min(1200) {
-    padding: 47px 52px 57px;
+    padding: 47px 52px 54px;
     max-width: 400px;
   }
 }
 
 .advantages-item {
+  position: relative;
   padding: 26px 20px 24px;
   background-color: $lightgray;
 
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 1px;
+    width: auto;
+    background-color: $gray-2;
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+
   @include min(768) {
     padding: 42px 33px 42px;
+
+    &::after {
+      display: none;
+    }
   }
 
   @include min(1200) {
-    padding: 43px 42px 41px;
+    padding: 43px 42px 58px;
   }
 
   &--city,
@@ -80,6 +102,10 @@
     background-color: $lightblue;
     color: $white;
 
+    &::after {
+      display: none;
+    }
+
     @include min(768) {
       width: 100%;
       justify-content: space-between;
@@ -87,11 +113,14 @@
   }
 
   &--city {
+    padding-top: 15px;
+
     .advantages-item__content {
-      padding-top: 55px;
+      padding-top: 49px;
     }
 
     @include min(768) {
+      padding-top: 0;
       flex-direction: row;
     }
   }

@@ -20,4 +20,12 @@
   &:hover {
     background-color: $blue;
   }
+
+  &:active {
+    background-color: $blue-2;
+
+    svg {
+      fill-opacity: 0.3;
+    }
+  }
 }
