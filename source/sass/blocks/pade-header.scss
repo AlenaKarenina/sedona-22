@@ -1,6 +1,4 @@
 .pade-header {
-  display: flex;
-  flex-direction: column-reverse;
   position: relative;
 
   @include min(768) {
