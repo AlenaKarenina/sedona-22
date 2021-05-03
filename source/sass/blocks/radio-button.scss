@@ -47,6 +47,16 @@
       background-color: $gray;
     }
   }
+
+  &:active {
+    &::before {
+      background-color: $gray-3;
+    }
+
+    &::after {
+      background: rgba(51, 51, 51, 0.3);
+    }
+  }
 }
 
 .radio-button__input {

@@ -47,7 +47,7 @@
     width: 23px;
     height: 16px;
     background: url("../img/tick.svg") 0 0 no-repeat;
-    opacity: 0;
+    display: none;
   }
 
   &:hover {
@@ -55,12 +55,22 @@
       background-color: $gray;
     }
   }
+
+  &:active {
+    &::before {
+      background-color: $gray-3;
+    }
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 .checkbox__input {
   &:checked + span {
     &::after {
-      opacity: 1;
+      display: block;
     }
   }
 }

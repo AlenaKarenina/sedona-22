@@ -81,22 +81,30 @@
             </fieldset>
 
             <fieldset class="feedback__item feedback__item--contacts">
-              <legend class="feedback__legend">Контактная информация:</legend>
+              <legend class="feedback__legend feedback__legend--line">
+                <span>Контактная информация:</span>
+              </legend>
               <div class="feedback__contacts-wrapper">
                 <label class="feedback__field field field--contacts">
                   <span class="field__label"><span class="field__label-word">Контактный</span> телефон*:</span>
-                  <input class="field__input" type="text" name="phone" placeholder="Введите телефон" required>
+                  <span class="field__icon-wrapper field__icon-wrapper--phone">
+                    <input class="field__input" type="text" name="phone" placeholder="Введите телефон" required>
+                  </span>
                 </label>
 
                 <label class="feedback__field field field--contacts">
                   <span class="field__label">Электронная почта*:</span>
-                  <input class="field__input" type="email" name="email" placeholder="Введите e-mail" required>
+                  <span class="field__icon-wrapper field__icon-wrapper--email">
+                    <input class="field__input" type="email" name="email" placeholder="Введите e-mail" required>
+                  </span>
                 </label>
               </div>
             </fieldset>
 
             <fieldset class="feedback__item feedback__item--impression">
-              <legend class="feedback__legend">Ваше общее впечатление:</legend>
+              <legend class="feedback__legend">
+                Ваше общее впечатление:
+              </legend>
 
               <label class="feedback__field radio-button">
                 <input class="radio-button__input visually-hidden" type="radio" name="impression" value="good" checked>
@@ -115,7 +123,9 @@
             </fieldset>
 
             <fieldset class="feedback__item feedback__item--visited">
-              <legend class="feedback__legend">Посещенные достопримечательности:</legend>
+              <legend class="feedback__legend feedback__legend--line">
+                <span>Посещенные<br> достопримечательности:</span>
+              </legend>
 
               <div class="feedback__checkbox-wrapper">
                 <label class="feedback__field checkbox">
@@ -141,7 +151,9 @@
             </fieldset>
 
             <fieldset class="feedback__item feedback__item--emotions">
-              <legend class="feedback__legend">Опишите свои эмоции:</legend>
+              <legend class="feedback__legend feedback__legend--line">
+                <span>Опишите свои эмоции:</span>
+              </legend>
               <label class="feedback__field textarea">
                 <textarea class="field__input field__input--textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
               </label>
