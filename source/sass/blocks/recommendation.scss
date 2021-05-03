@@ -1,5 +1,6 @@
 .recommendation {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 
   @include list-style-none;
@@ -11,11 +12,11 @@
   @include min(768) {
     flex-direction: row;
     text-align: center;
-    padding: 60px 0;
+    padding: 60px 0 0;
   }
 
   @include min(1200) {
-    padding: 60px 0 77px;
+    padding: 60px 0 0;
   }
 }
 
@@ -41,31 +42,31 @@
 
 .recommendation__item {
   position: relative;
-  padding: 0 21px 0 48px;
+  padding: 0 0 0 48px;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    display: inline-block;
-    vertical-align: top;
+    display: block;
     background-size: cover;
     background-position: 0 0;
     background-repeat: no-repeat;
 
     @include min(768) {
-      position: relative;
-      left: auto;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
   @include min(768) {
-    padding: 0 36px;
+    padding: 100px 36px 60px;
+    width: 33.33%;
   }
 
   @include min(1200) {
-    padding: 0 58px;
+    padding: 100px 58px 77px;
   }
 
   &--housing {

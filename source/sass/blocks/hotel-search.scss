@@ -41,10 +41,14 @@
 .hotel-search__content {
   padding-top: 33px;
   padding-bottom: 49px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include min(768) {
     padding-top: 58px;
     padding-bottom: 58px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   @include min(1200) {
