@@ -1,10 +1,10 @@
 .gallery__items {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
   border-bottom: 1px solid $gray;
 
   @include min(768) {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0 60px;
     border-bottom: none;
   }
@@ -35,13 +35,13 @@
 
   &:nth-child(even) {
     @include min(768) {
-      .image-card__desc {
+      .gallery-card__desc {
         background-color: $light;
       }
     }
 
     @include min(1200) {
-      .image-card__desc {
+      .gallery-card__desc {
         background-color: rgba(0, 0, 0, 0.3);
       }
     }
@@ -53,7 +53,7 @@
     @include min(768) {
       height: auto;
 
-      .image-card__image-wrapper {
+      .gallery-card__image-wrapper {
         height: 400px;
       }
     }

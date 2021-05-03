@@ -1,10 +1,12 @@
 .pade-header {
-  display: flex;
-  flex-direction: column-reverse;
   position: relative;
 
   @include min(768) {
     padding: 16px 0 14px;
+  }
+
+  @include max(767) {
+    padding-bottom: 56px;
   }
 }
 
@@ -19,18 +21,5 @@
   @include min(768) {
     bottom: auto;
     top: 0;
-  }
-}
-
-.page-header__toggle {
-  margin: 17px 20px 17px auto;
-  outline: none;
-  border: none;
-  width: 23px;
-  height: 22px;
-  background: url("../img/icon-menu.svg") 0 0 no-repeat;
-
-  @include min(768) {
-    display: none;
   }
 }

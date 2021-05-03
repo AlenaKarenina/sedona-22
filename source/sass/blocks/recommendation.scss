@@ -13,6 +13,10 @@
     text-align: center;
     padding: 60px 0;
   }
+
+  @include min(1200) {
+    padding: 60px 0 77px;
+  }
 }
 
 .recommendation__title {
@@ -22,6 +26,8 @@
   @include text-parametr(18px, 26px, 700);
 
   @include min(768) {
+    margin-bottom: 24px;
+
     @include text-parametr(21px, 26px, 700);
   }
 }

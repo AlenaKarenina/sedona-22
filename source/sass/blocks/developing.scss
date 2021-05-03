@@ -1,5 +1,21 @@
 .developing {
   display: inline-flex;
+
+  svg {
+    fill: $black;
+  }
+
+  &:hover {
+    svg {
+      fill: $lightblue;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $gray;
+    }
+  }
 }
 
 .developing__text {

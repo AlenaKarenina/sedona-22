@@ -1,9 +1,9 @@
-.image-card {
+.gallery-card {
   position: relative;
   text-align: left;
 }
 
-.image-card__image-wrapper {
+.gallery-card__image-wrapper {
   display: block;
   height: 280px;
 
@@ -20,14 +20,15 @@
   }
 }
 
-.image-card__desc {
-  padding-top: 11px;
+.gallery-card__desc {
   position: relative;
+  padding-top: 11px;
 
   @include min(768) {
     background-color: $darkgray;
     padding-left: 20px;
     padding-bottom: 15px;
+    padding-right: 80px;
   }
 
   @include min(1200) {
@@ -40,14 +41,14 @@
   }
 }
 
-.image-card__name {
+.gallery-card__name {
   margin-bottom: 2px;
   margin-top: 0;
 
   @include text-parametr(14px, 24px, 700);
 }
 
-.image-card__author {
+.gallery-card__author {
   margin-bottom: 0;
   margin-top: 0;
 
@@ -55,7 +56,7 @@
   text-transform: none;
 }
 
-.image-card__like {
+.gallery-card__like {
   position: relative;
   padding-left: 37px;
   margin-top: 13px;
