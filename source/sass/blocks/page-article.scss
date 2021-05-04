@@ -22,20 +22,20 @@
   padding: 32px 10px 12px;
 
   @include min(768) {
-    padding: 43px 10px 52px;
+    padding: 43px 60px 52px;
   }
 
   @include min(1200) {
-    padding: 56px 10px 43px;
+    padding: 56px 60px 43px;
   }
 
   &--inner {
     @include min(768) {
       width: 100%;
-      max-width: 460px;
+      max-width: 560px;
       margin-left: auto;
       margin-right: auto;
-      padding: 64px 10px 63px;
+      padding: 64px 60px 63px;
 
       .page-article__title {
         @include text-parametr(30px, 26px, 700);
@@ -43,7 +43,7 @@
     }
 
     @include min(1200) {
-      padding: 114px 10px 59px;
+      padding: 114px 60px 59px;
     }
   }
 }

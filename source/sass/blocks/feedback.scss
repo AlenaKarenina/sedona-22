@@ -8,6 +8,30 @@
 
   @include min(768) {
     @include text-parametr(21px, 26px, 700);
+
+    &--line {
+      position: relative;
+
+      span {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: $white;
+        padding: 0 50px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $gray;
+      }
+    }
   }
 }
 
@@ -190,7 +214,6 @@
 
       .feedback__legend {
         margin-bottom: 43px;
-        max-width: 310px;
       }
     }
 
@@ -222,11 +245,13 @@
     width: 100%;
     order: 5;
     padding-bottom: 0;
+    text-align: center;
 
     @include min(768) {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      text-align: left;
     }
   }
 }

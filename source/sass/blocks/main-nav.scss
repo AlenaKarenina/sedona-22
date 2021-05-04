@@ -15,9 +15,10 @@
   width: 100%;
   background-color: $lightblue;
 
-  @include max(768) {
+  @include max(767) {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: $white;
 
     &:last-child {
       position: relative;
@@ -32,6 +33,15 @@
         height: 7px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
       }
+    }
+
+    &:hover {
+      background-color: $blue;
+    }
+
+    &:active {
+      background-color: $blue-2;
+      color: rgba(255, 255, 255, 0.3);
     }
   }
 
@@ -53,7 +63,7 @@
 .main-nav__link {
   display: block;
   padding: 10px 0 5px;
-  color: $white;
+  color: inherit;
 
   @include text-parametr(18px, 40px, 700);
   text-decoration: none;
