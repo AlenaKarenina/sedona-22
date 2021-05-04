@@ -65,4 +65,8 @@
       opacity: 1;
     }
   }
+
+  &:focus-visible ~ .radio-button__label {
+    outline: auto;
+  }
 }
