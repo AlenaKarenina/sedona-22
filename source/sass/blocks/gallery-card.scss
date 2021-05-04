@@ -61,6 +61,16 @@
   padding-left: 37px;
   margin-top: 13px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 23px;
+    height: 21px;
+    background: url("../img/icon-like.svg") 0 0 no-repeat;
+  }
+
   @include text-parametr(14px, 24px, 700);
 
   @include min(768) {
@@ -69,5 +79,11 @@
     top: 50%;
     transform: translateY(-50%);
     margin: 0;
+  }
+
+  @include min(1200) {
+    &::before {
+      fill: $white;
+    }
   }
 }
