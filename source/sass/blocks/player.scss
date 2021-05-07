@@ -115,8 +115,21 @@
     order: 3;
   }
 
+  &:hover {
+    fill: $dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @include min(768) {
     fill: $white;
+
+    &:hover {
+      fill: $white;
+      opacity: 0.6;
+    }
   }
 }
 

@@ -305,3 +305,9 @@
     }
   }
 }
+
+.feedback__field {
+  &:focus-visible {
+    outline: auto;
+  }
+}

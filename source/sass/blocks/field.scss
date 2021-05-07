@@ -69,11 +69,8 @@
   }
 
   &:focus {
+    outline: none;
     background-color: $white;
-  }
-
-  &:focus-visible {
-    outline: auto;
   }
 }
 

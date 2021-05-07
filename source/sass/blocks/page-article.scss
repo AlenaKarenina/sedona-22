@@ -30,6 +30,8 @@
   }
 
   &--inner {
+    padding: 32px 10px 33px;
+
     @include min(768) {
       width: 100%;
       max-width: 560px;
