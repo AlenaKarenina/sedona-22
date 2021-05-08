@@ -3,7 +3,7 @@
   background-color: $lightblue;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
 
   &::before {
     content: "";
@@ -15,8 +15,27 @@
     height: 57px;
   }
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+    background-size: 100% auto;
+  }
+
   @include min(768) {
+    background-image: url("../img/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+      background-size: 100% auto;
+    }
+  }
+
+  @include min(1200) {
     background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+      background-size: 100% auto;
+    }
   }
 
   img {
