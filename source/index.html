@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   </head>
   <body class="page-body">
 
@@ -15,7 +16,7 @@
         <a class="pade-header__logo">
           <picture>
             <source srcset="img/logo-desktop.svg" media="(min-width: 1200px)" width="187" hight="97">
-            <img src="img/logo.svg" alt="Логотип города Седона" width="102" height="84">
+            <img src="img/logo-mobile.svg" alt="Логотип города Седона" width="102" height="84">
           </picture>
         </a>
         <nav class="pade-header__nav main-nav main-nav--nojs">
@@ -72,7 +73,11 @@
                   <p class="advantages-item__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <div class="advantages-item__image-wrapper">
-                  <img src="img/photo-city@1x.jpg" alt="Седона, здание с флагом">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                    <img src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="Седона, здание с флагом" width="100%" height="100%">
+                  </picture>
                 </div>
               </div>
               <ul class="recommendation">
@@ -97,7 +102,11 @@
                 <p class="advantages-item__text">Да, по нему можно пройти! Если&nbsp;вы осмелитесь,&nbsp;конечно</p>
               </div>
               <div class="advantages-item__image-wrapper">
-                <img src="img/photo-bridge@1x.jpg" alt="Седона, мост дьявола">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Седона, мост дьявола" width="100%" height="100%">
+                </picture>
               </div>
             </li>
 
@@ -126,7 +135,12 @@
             <button class="hotel-search__button button" type="button">Найти гостиницу</button>
           </div>
           <div class="hotel-search__map">
-            <img src="img/map-desktop.jpg" alt="Карта для поиска гостиниц в Седоне">
+            <span class="hotel-search__map-icon"></span>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
+              <img src="img/map-mobile.jpg" alt="Карта для поиска гостиниц в Седоне">
+            </picture>
           </div>
         </section>
 
