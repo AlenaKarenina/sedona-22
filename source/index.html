@@ -146,11 +146,13 @@
             <button class="hotel-search__button button" type="button">Найти гостиницу</button>
           </div>
           <div class="hotel-search__map">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg">
-              <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
-              <img src="img/map-mobile.jpg" alt="Карта для поиска гостиниц в Седоне">
-            </picture>
+            <noscript>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
+                <img src="img/map-mobile.jpg" alt="Карта для поиска гостиниц в Седоне">
+              </picture>
+            </noscript>
             <div class="hotel-search__map-iframe" id="map"></div>
           </div>
         </section>
