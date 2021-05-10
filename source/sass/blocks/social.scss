@@ -9,7 +9,15 @@
 }
 
 .social__item {
-  padding: 3px;
+  padding: 3px 0;
+  &:not(:last-child) {
+    margin-right: 7px;
+  }
+  @include min(768) {
+    &:last-child {
+      margin-right: 9px;
+    }
+  }
 }
 
 .social__link {
@@ -20,6 +28,7 @@
   height: 48px;
   background-color: $lightblue;
   transition: 0.2s;
+  color: white;
 
   &:hover {
     background-color: $blue;

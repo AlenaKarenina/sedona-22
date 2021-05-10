@@ -19,14 +19,14 @@
 
 .page-article {
   text-align: center;
-  padding: 32px 10px 12px;
+  padding: 32px 10px 15px;
 
   @include min(768) {
-    padding: 43px 60px 52px;
+    padding: 43px 60px 55px;
   }
 
   @include min(1200) {
-    padding: 56px 60px 43px;
+    padding: 55px 60px 43px;
   }
 
   &--inner {

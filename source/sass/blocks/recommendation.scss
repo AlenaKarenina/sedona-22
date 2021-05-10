@@ -4,7 +4,7 @@
   flex-direction: column;
 
   @include list-style-none;
-  padding: 35px 21px;
+  padding: 33px 21px 36px;
   background-color: white;
   color: $font-color;
   text-align: left;
@@ -27,7 +27,7 @@
   @include text-parametr(18px, 26px, 700);
 
   @include min(768) {
-    margin-bottom: 24px;
+    margin-bottom: 23px;
 
     @include text-parametr(21px, 26px, 700);
   }
@@ -47,26 +47,19 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     display: block;
     background-size: cover;
     background-position: 0 0;
     background-repeat: no-repeat;
-
-    @include min(768) {
-      left: 50%;
-      transform: translateX(-50%);
-    }
   }
 
   @include min(768) {
-    padding: 100px 36px 60px;
+    padding: 97px 31px 60px;
     width: 33.33%;
   }
 
   @include min(1200) {
-    padding: 100px 58px 77px;
+    padding: 98px 58px 81px;
   }
 
   &--housing {
@@ -76,6 +69,8 @@
       background-image: url("../img/icon-house.svg");
       width: 39px;
       height: 37px;
+      top: -8px;
+      left: 0;
 
       @include min(768) {
         width: 75px;
@@ -92,6 +87,8 @@
       background-image: url("../img/icon-gift.svg");
       width: 32px;
       height: 38px;
+      top: -10px;
+      left: 4px;
 
       @include min(768) {
         width: 64px;
@@ -112,6 +109,8 @@
       background-image: url("../img/icon-burger.svg");
       width: 38px;
       height: 34px;
+      top: -4px;
+      left: -2px;
 
       @include min(768) {
         width: 77px;
@@ -122,6 +121,26 @@
 
     @include min(768) {
       order: 2;
+    }
+  }
+
+  @include min(768) {
+    &::before {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--souvenirs {
+      &::before {
+        top: -3px;
+      }
+    }
+
+    &--food {
+      &::before {
+        top: 2px;
+      }
     }
   }
 
