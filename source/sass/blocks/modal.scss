@@ -1,0 +1,90 @@
+.modal__title {
+  @include text-parametr(18px, 26px, 700);
+  margin-top: 0;
+  margin-bottom: 27px;
+  padding: 0 41px;
+
+  @include min(768) {
+    @include text-parametr(30px, 40px, 700);
+    margin-bottom: 24px;
+  }
+}
+
+.modal__text {
+  @include text-parametr(14px, 24px, 400);
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0 41px;
+
+  @include min(768) {
+    margin-bottom: 27px;
+    padding: 0 46px;
+  }
+}
+
+.modal__footer {
+  padding: 20px;
+  background-color: $light;
+
+  @include min(768) {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transform: translateY(-50%);
+  margin: auto;
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  &--success {
+    max-width: 640px;
+    padding: 40px 0 0;
+
+    .modal__text {
+      margin-bottom: 29px;
+
+      @include min(768) {
+        margin-bottom: 32px;
+        padding: 0 97px;
+      }
+    }
+
+    .modal__button {
+      min-width: 280px;
+
+      @include min(768) {
+        padding: 17px 122px 15px;
+      }
+    }
+  }
+
+  &--fail {
+    max-width: 400px;
+    padding: 40px 0 35px;
+
+    .modal__button {
+      min-width: 180px;
+
+      @include min(768) {
+        padding: 17px 122px 15px;
+      }
+    }
+
+    @include min(768) {
+      padding-bottom: 49px;
+    }
+  }
+
+  @include min(768) {
+    padding-top: 52px;
+  }
+}
