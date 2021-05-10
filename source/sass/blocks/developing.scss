@@ -1,7 +1,9 @@
 .developing {
   display: inline-flex;
+  align-items: center;
 
   svg {
+    margin-top: 5px;
     fill: $black;
   }
 
@@ -19,6 +21,6 @@
 }
 
 .developing__text {
-  @include text-parametr(14px, 35px, 400);
+  @include text-parametr(14px, 40px, 400);
   margin-right: 12px;
 }

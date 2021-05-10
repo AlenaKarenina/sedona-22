@@ -1,0 +1,38 @@
+.br {
+
+  &--mobile {
+    display: block;
+
+    @include min(768) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @include min(1200) {
+      display: block;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @include min(768) {
+      display: block;
+    }
+
+    @include min(1200) {
+      display: none;
+    }
+  }
+
+  &--tablet-desktop {
+    display: none;
+
+    @include min(768) {
+      display: block;
+    }
+  }
+}

@@ -5,11 +5,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 38px 60px 23px;
+    padding: 35px 60px 23px;
   }
 
   @include min(1200) {
-    padding: 38px 120px 23px;
+    padding: 33px 120px 33px;
   }
 }
 
@@ -19,7 +19,7 @@
 
 .page-footer__hashtag {
   @include text-parametr(21px, 26px, 700);
-  margin: 0 0 33px;
+  margin: 0 0 31px;
 
   @include min(768) {
     margin: 0;
@@ -27,7 +27,7 @@
 }
 
 .page-footer__developing {
-  margin-top: 40px;
+  margin-top: 30px;
 
   @include min(768) {
     margin: 0;

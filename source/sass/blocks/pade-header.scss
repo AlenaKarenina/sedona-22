@@ -2,7 +2,7 @@
   position: relative;
 
   @include min(768) {
-    padding: 16px 0 14px;
+    padding: 16px 0 16px;
   }
 
   @include max(767) {
