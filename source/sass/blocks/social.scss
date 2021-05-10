@@ -10,9 +10,11 @@
 
 .social__item {
   padding: 3px 0;
+
   &:not(:last-child) {
     margin-right: 7px;
   }
+
   @include min(768) {
     &:last-child {
       margin-right: 9px;
