@@ -30,7 +30,11 @@
   }
 
   &--inner {
-    padding: 32px 10px 33px;
+    padding: 35px 10px 17px;
+
+    .page-article__title {
+      margin-bottom: 29px;
+    }
 
     @include min(768) {
       width: 100%;
@@ -46,6 +50,10 @@
 
     @include min(1200) {
       padding: 114px 60px 59px;
+
+      .page-article__title {
+        margin-bottom: 32px;
+      }
     }
   }
 }
