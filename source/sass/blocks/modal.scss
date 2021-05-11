@@ -1,8 +1,15 @@
+.modal__body {
+  padding: 0 41px;
+
+  @include min(768) {
+    padding: 0 46px;
+  }
+}
+
 .modal__title {
   @include text-parametr(18px, 26px, 700);
   margin-top: 0;
   margin-bottom: 27px;
-  padding: 0 41px;
 
   @include min(768) {
     @include text-parametr(30px, 40px, 700);
@@ -14,11 +21,9 @@
   @include text-parametr(14px, 24px, 400);
   margin: 0;
   margin-bottom: 22px;
-  padding: 0 41px;
 
   @include min(768) {
     margin-bottom: 27px;
-    padding: 0 46px;
   }
 }
 
