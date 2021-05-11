@@ -41,7 +41,6 @@
   img {
     display: block;
     margin: 0 auto;
-    object-fit: contain;
     object-position: center;
   }
 
@@ -69,7 +68,10 @@
 
     @include min(768) {
       padding: 95px 0 117px 0;
-      background-position: center 95%;
+    }
+
+    @include min(1200) {
+      padding: 102px 0 121px 0;
     }
 
     img {

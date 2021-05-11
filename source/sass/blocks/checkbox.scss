@@ -5,7 +5,7 @@
   text-align: left;
 
   @include min(768) {
-    width: 50%;
+    width: 200px;
   }
 
   @include min(1200) {
@@ -32,9 +32,9 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 51px;
-    height: 51px;
-    border-radius: 2px;
+    width: 54px;
+    height: 54px;
+    border-radius: 4px;
     background-color: $light;
   }
 
@@ -64,6 +64,14 @@
     &::after {
       opacity: 0.3;
     }
+  }
+
+  @include min(768) {
+    padding-top: 15px;
+  }
+
+  @include min(1200) {
+    min-width: 204px;
   }
 }
 

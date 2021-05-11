@@ -2,6 +2,7 @@
   display: inline-block;
   vertical-align: middle;
   min-width: 100px;
+  max-width: 100%;
   padding: 17px 47px 15px;
   font-family: $font;
 
@@ -27,5 +28,15 @@
 
   @include min(1200) {
     padding: 17px 137px 15px;
+  }
+
+  &--form {
+    @include min(768) {
+      padding: 18px 77px 14px 65px;
+    }
+
+    @include min(1200) {
+      padding: 18px 148px 14px 150px;
+    }
   }
 }
