@@ -23,20 +23,18 @@
   }
 
   @include min(768) {
-    padding: 17px 136px 15px;
-  }
-
-  @include min(1200) {
-    padding: 17px 137px 15px;
+    min-width: 458px;
   }
 
   &--form {
     @include min(768) {
-      padding: 18px 77px 14px 65px;
+      //padding: 18px 77px 14px 65px;
+      min-width: 324px;
     }
 
     @include min(1200) {
-      padding: 18px 148px 14px 150px;
+      //padding: 18px 148px 14px 150px;
+      min-width: 480px;
     }
   }
 }
