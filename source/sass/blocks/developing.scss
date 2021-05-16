@@ -3,6 +3,7 @@
   align-items: center;
 
   svg {
+    display: block;
     margin-top: 5px;
     fill: $black;
   }
@@ -23,4 +24,8 @@
 .developing__text {
   @include text-parametr(14px, 40px, 400);
   margin-right: 12px;
+}
+
+.developing__link {
+  display: block;
 }
