@@ -1,6 +1,14 @@
 .gallery-card {
   position: relative;
   text-align: left;
+
+  &--odd {
+    @include min(768) {
+      .gallery-card__like {
+        right: 36px;
+      }
+    }
+  }
 }
 
 .gallery-card__image-wrapper {
@@ -27,7 +35,7 @@
   @include min(768) {
     background-color: $darkgray;
     padding-left: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 17px;
     padding-right: 80px;
   }
 
@@ -42,10 +50,14 @@
 }
 
 .gallery-card__name {
-  margin-bottom: 2px;
+  margin-bottom: 0;
   margin-top: 0;
 
   @include text-parametr(14px, 24px, 700);
+
+  @include min(768) {
+    margin-top: 4px;
+  }
 }
 
 .gallery-card__author {
@@ -61,29 +73,31 @@
   padding-left: 37px;
   margin-top: 13px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -2px;
-    width: 23px;
-    height: 21px;
-    background: url("../img/icon-like.svg") 0 0 no-repeat;
-  }
-
   @include text-parametr(14px, 24px, 700);
 
   @include min(768) {
     position: absolute;
-    right: 20px;
+    right: 29px;
     top: 50%;
     transform: translateY(-50%);
     margin: 0;
   }
+}
+
+.gallery-card__icon {
+  position: absolute;
+  left: 0;
+  top: -2px;
+  color: black;
+  opacity: 0.3;
+
+  @include min(768) {
+    top: 0;
+    left: 5px;
+  }
 
   @include min(1200) {
-    &::before {
-      fill: $white;
-    }
+    color: $white;
+    opacity: 1;
   }
 }

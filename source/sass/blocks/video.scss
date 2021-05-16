@@ -1,11 +1,27 @@
 .video {
-  padding: 0 0 49px;
+  padding: 0 0 39px;
+
+  .page-article {
+    padding: 31px 10px 34px;
+  }
 
   @include min(768) {
-    padding: 0 60px 40px;
+    padding: 0 60px 38px;
+
+    .page-article {
+      padding: 58px 10px 80px;
+    }
+
+    .page-article__title {
+      margin-bottom: 32px;
+    }
   }
 
   @include min(1200) {
     padding: 0 200px 85px;
+
+    .page-article {
+      padding: 61px 10px 80px;
+    }
   }
 }
