@@ -38,7 +38,8 @@
     "optimizeImages": "gulp optimizeImages",
     "createWebp": "gulp createWebp",
     "sprite": "gulp sprite",
-    "copy": "gulp copy"
+    "copy": "gulp copy",
+    "del": "gulp del"
   },
   "browserslist": [
     "last 2 versions",
