@@ -92,11 +92,7 @@
   border-radius: 50%;
 
   @include min(768) {
-    left: 29%;
-  }
-
-  @include min(768) {
-    left: 21%;
+    left: 111px;
   }
 }
 
