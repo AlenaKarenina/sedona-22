@@ -105,11 +105,11 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
-    "source/sprite.svg",
-    "source/img/**/*.{jpg,png,svg}",
+    "source/img/**/*.svg",
+    "source/img/sprite.svg",
   ], {
     base:"source"
-  } )
+  })
   .pipe(gulp.dest("build"))
   done();
 }
