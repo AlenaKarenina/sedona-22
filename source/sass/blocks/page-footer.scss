@@ -1,11 +1,11 @@
 .page-footer {
-  padding: 38px 20px 23px;
+  padding: 38px 20px 33px;
 
   @include min(768) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 60px 23px;
+    padding: 35px 60px 33px;
   }
 
   @include min(1200) {
@@ -27,7 +27,7 @@
 }
 
 .page-footer__developing {
-  margin-top: 30px;
+  margin-top: 34px;
 
   @include min(768) {
     margin: 0;
