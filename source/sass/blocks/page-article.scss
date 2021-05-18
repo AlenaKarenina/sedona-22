@@ -9,7 +9,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    @include text-parametr(21px, 26px, 700);
+    @include text-parametr(21px, 27px, 700);
   }
 }
 
@@ -22,11 +22,11 @@
   padding: 32px 10px 15px;
 
   @include min(768) {
-    padding: 43px 60px 55px;
+    padding: 44px 60px 52px;
   }
 
   @include min(1200) {
-    padding: 55px 60px 43px;
+    padding: 55px 60px 41px;
   }
 
   &--inner {
@@ -44,6 +44,8 @@
       padding: 64px 60px 63px;
 
       .page-article__title {
+        margin-bottom: 32px;
+
         @include text-parametr(30px, 26px, 700);
       }
     }

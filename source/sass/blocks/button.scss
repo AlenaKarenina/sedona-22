@@ -3,10 +3,10 @@
   vertical-align: middle;
   min-width: 100px;
   max-width: 100%;
-  padding: 17px 47px 15px;
+  padding: 17px 47px 19px;
   font-family: $font;
 
-  @include text-parametr(21px, 26px, 700);
+  @include text-parametr(21px, 22px, 700);
   background-color: $lightblue;
   color: $white;
   border: none;
@@ -27,14 +27,17 @@
   }
 
   &--form {
+    min-width: 280px;
+    padding: 20px 47px 16px;
+
     @include min(768) {
-      //padding: 18px 77px 14px 65px;
       min-width: 324px;
+      padding-right: 56px;
     }
 
     @include min(1200) {
-      //padding: 18px 148px 14px 150px;
       min-width: 480px;
+      padding-right: 47px;
     }
   }
 }

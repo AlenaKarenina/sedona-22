@@ -1,11 +1,11 @@
 .page-footer {
-  padding: 38px 20px 33px;
+  padding: 38px 20px 18px;
 
   @include min(768) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 60px 33px;
+    padding: 34px 60px 33px;
   }
 
   @include min(1200) {
@@ -18,7 +18,7 @@
 }
 
 .page-footer__hashtag {
-  @include text-parametr(21px, 26px, 700);
+  @include text-parametr(21px, 25px, 700);
   margin: 0 0 31px;
 
   @include min(768) {

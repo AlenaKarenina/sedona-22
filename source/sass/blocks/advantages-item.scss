@@ -15,9 +15,9 @@
   }
 
   @include min(768) {
-    @include text-parametr(21px, 25px, 700);
-    padding: 0 24px;
-    margin-bottom: 22px;
+    @include text-parametr(21px, 26px, 700);
+    padding: 0 16px;
+    margin-bottom: 20px;
   }
 
   @include min(1200) {
@@ -52,7 +52,7 @@
   padding: 0 12px;
 
   @include min(768) {
-    padding: 40px 32px 43px;
+    padding: 40px 32px 42px;
     width: 33.33%;
   }
 
