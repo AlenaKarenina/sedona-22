@@ -33,15 +33,6 @@
     }
   }
 
-  &:hover {
-    background-color: $blue-color;
-  }
-
-  &:active {
-    background-color: $blue-active;
-    color: rgba(255, 255, 255, 0.3);
-  }
-
   @include min($tablet) {
     background-color: $white-color;
     width: 20%;
@@ -67,11 +58,20 @@
 
 .main-nav__link {
   display: block;
-  padding: 10px 0 5px;
+  padding: 10px 20px 5px;
   color: inherit;
 
   @include text-parametr(18px, 40px, 700);
   text-decoration: none;
+
+  &:hover {
+    background-color: $blue-color;
+  }
+
+  &:active {
+    background-color: $blue-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @include min($tablet) {
     color: $font-color;
@@ -81,10 +81,12 @@
 
     &:hover {
       color: $lightblue-color;
+      background-color: transparent;
     }
 
     &:active {
       color: rgba(0, 0, 0, 0.3);
+      background-color: transparent;
     }
 
     &--active {
