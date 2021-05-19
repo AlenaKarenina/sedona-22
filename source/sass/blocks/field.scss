@@ -36,10 +36,6 @@
         padding-left: 0;
         white-space: nowrap;
       }
-
-      .field__input {
-        max-width: 316px;
-      }
     }
   }
 }
@@ -123,6 +119,7 @@
 
   @include min($desktop) {
     width: auto;
-    min-width: 316px;
+    max-width: 316px;
+    flex-grow: 1;
   }
 }
