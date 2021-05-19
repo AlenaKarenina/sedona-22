@@ -10,6 +10,8 @@
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
     <link rel="manifest" href="img/favicon/manifest.webmanifest">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body class="page-body">
 
@@ -90,15 +92,15 @@
               <ul class="recommendation">
                 <li class="recommendation__item recommendation__item--housing">
                   <h3 class="recommendation__title">Жилье</h3>
-                  <p class="recommendation__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  <p class="recommendation__text">Рекомендуем пожить в настоящем мотеле, всё как&nbsp;в кино!</p>
                 </li>
                 <li class="recommendation__item recommendation__item--souvenirs">
                   <h3 class="recommendation__title">Сувениры</h3>
-                  <p class="recommendation__text">Не только китайского,<br class="br br--desktop"> но<br class="br br--tablet"> и местного&nbsp;производства!</p>
+                  <p class="recommendation__text">Не только китайского,<br class="br br--desktop"> &nbsp;но <br class="br br--tablet"> &nbsp;и местного&nbsp;производства!</p>
                 </li>
                 <li class="recommendation__item recommendation__item--food">
                   <h3 class="recommendation__title">Еда</h3>
-                  <p class="recommendation__text">Всегда заказывайте фирменный бургер,<br class="br br--tablet br--desktop"> вы&nbsp;не разочаруетесь!</p>
+                  <p class="recommendation__text">Всегда заказывайте фирменный&nbsp;бургер, <br class="br br--tablet-desktop"> вы&nbsp;не разочаруетесь!</p>
                 </li>
               </ul>
             </li>
@@ -116,7 +118,7 @@
 
                   <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                  <img src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Седона, мост дьявола">
+                  <img loading="lazy" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Седона, мост дьявола">
                 </picture>
               </div>
             </li>
@@ -128,12 +130,12 @@
 
             <li class="advantages__item advantages-item">
               <h3 class="advantages-item__title">Красивая дорога</h3>
-              <p class="advantages-item__text">Ехать в Седону из Лас&#8209;Вегаса<br class="br br--mobile"> совсем не&nbsp;скучно!</p>
+              <p class="advantages-item__text">Ехать в Седону из Лас&#8209;Вегаса<br class="br br--mobile"> &nbsp;совсем не&nbsp;скучно!</p>
             </li>
 
             <li class="advantages__item advantages-item">
               <h3 class="advantages-item__title">Мало туристов</h3>
-              <p class="advantages-item__text">Большинство едет в Гранд&nbsp;Каньон<br class="br br--mobile"> и толпится&nbsp;там</p>
+              <p class="advantages-item__text">Большинство едет в Гранд&nbsp;Каньон<br class="br br--mobile"> &nbsp;и толпится&nbsp;там</p>
             </li>
 
           </ol>
@@ -154,7 +156,7 @@
 
                 <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
-                <img src="img/map-mobile.jpg" alt="Карта для поиска гостиниц в Седоне">
+                <img loading="lazy" src="img/map-mobile.jpg" alt="Карта для поиска гостиниц в Седоне">
               </picture>
             </noscript>
             <div class="hotel-search__map-iframe" id="map"></div>

@@ -21,7 +21,7 @@
   min-height: 55px;
   min-width: 200px;
   padding-left: 80px;
-  padding-top: 14px;
+  padding-top: 15px;
 
   @include text-parametr(18px, 26px, 700);
   text-transform: none;
@@ -30,10 +30,9 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 54px;
-    height: 54px;
+    top: 0;
+    width: 56px;
+    height: 56px;
     border-radius: 4px;
     background-color: $light;
   }
@@ -41,9 +40,8 @@
   &::after {
     content: "";
     position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 17px;
+    top: 20px;
     width: 23px;
     height: 16px;
     background: url("../img/tick.svg") 0 0 no-repeat;

@@ -9,6 +9,8 @@
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
     <link rel="manifest" href="img/favicon/manifest.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body class="page-body">
 
@@ -76,7 +78,7 @@
 
                     <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                    <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
+                    <img loading="lazy" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
                   </picture>
                 </a>
                 <div class="gallery-card__desc">
@@ -101,7 +103,7 @@
 
                   <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                  <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность">
+                  <img loading="lazy" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность">
                 </picture>
               </a>
               <div class="gallery-card__desc">
@@ -125,7 +127,7 @@
 
                   <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-                  <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
+                  <img loading="lazy" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
                 </picture>
               </a>
               <div class="gallery-card__desc">
@@ -149,7 +151,7 @@
 
                   <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-                  <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
+                  <img loading="lazy" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
                 </picture>
               </a>
               <div class="gallery-card__desc">
@@ -173,7 +175,7 @@
               Все еще сомневаетесь?
             </h2>
             <p class="page-article__text">
-              Смотрите видеопрезентацию и скорее&nbsp;за&nbsp;билетами, пока они<br class="br br--tablet-desktop"> не подорожали в очередной раз!
+              Смотрите видеопрезентацию и скорее&nbsp;за&nbsp;билетами, пока они<br class="br br--tablet-desktop"> &nbsp;не подорожали в очередной раз!
             </p>
           </div>
           <div class="player">
