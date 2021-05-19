@@ -150,5 +150,11 @@
     .main-nav__toggle {
       display: none;
     }
+
+    @include min($tablet) {
+      .main-nav__list {
+        display: flex;
+      }
+    }
   }
 }

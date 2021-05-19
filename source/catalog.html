@@ -73,8 +73,10 @@
                   </picture>
                 </a>
                 <div class="gallery-card__desc">
-                  <h3 class="gallery-card__name">Неродные просторы</h3>
-                  <p class="gallery-card__author">Автор фото: Борис</p>
+                  <div class="gallery-card__content">
+                    <h3 class="gallery-card__name">Неродные просторы</h3>
+                    <p class="gallery-card__author">Автор фото: Борис</p>
+                  </div>
                   <div class="gallery-card__like">
                     <svg class="gallery-card__icon" width="23" height="21" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#like"></use>
@@ -97,8 +99,10 @@
                 </picture>
               </a>
               <div class="gallery-card__desc">
-                <h3 class="gallery-card__name">Местная растительность</h3>
-                <p class="gallery-card__author">Автор фото: Сергей</p>
+                <div class="gallery-card__content">
+                  <h3 class="gallery-card__name">Местная растительность</h3>
+                  <p class="gallery-card__author">Автор фото: Сергей</p>
+                </div>
                 <div class="gallery-card__like">
                   <svg class="gallery-card__icon" width="23" height="21" aria-hidden="true">
                     <use xlink:href="img/sprite.svg#like"></use>
@@ -120,8 +124,10 @@
                 </picture>
               </a>
               <div class="gallery-card__desc">
-                <h3 class="gallery-card__name">Дорога на север</h3>
-                <p class="gallery-card__author">Автор фото: Петр</p>
+                <div class="gallery-card__content">
+                  <h3 class="gallery-card__name">Дорога на север</h3>
+                  <p class="gallery-card__author">Автор фото: Петр</p>
+                </div>
                 <div class="gallery-card__like">
                   <svg class="gallery-card__icon" width="23" height="21" aria-hidden="true">
                     <use xlink:href="img/sprite.svg#like"></use>
@@ -143,8 +149,10 @@
                 </picture>
               </a>
               <div class="gallery-card__desc">
-                <h3 class="gallery-card__name">Мост дьявола</h3>
-                <p class="gallery-card__author">Автор фото: Антон</p>
+                <div class="gallery-card__content">
+                  <h3 class="gallery-card__name">Мост дьявола</h3>
+                  <p class="gallery-card__author">Автор фото: Антон</p>
+                </div>
                 <div class="gallery-card__like">
                   <svg class="gallery-card__icon" width="23" height="21" aria-hidden="true">
                     <use xlink:href="img/sprite.svg#like"></use>
@@ -168,9 +176,9 @@
           <div class="player">
             <video class="player__presentation" poster="img/video-desktop.jpg" aria-label="Видеопрезентация туристического города Седона"></video>
             <div class="player__controls">
-              <div class="player__progress">
+              <div class="player__progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" tabindex="0" aria-label="Прогресс бар">
                 <div class="player__progress-bar"></div>
-                <div class="player__progress-toddler"></div>
+                <div class="player__progress-toddler" tabindex="0" aria-label="Ползунок поиска"></div>
               </div>
               <button class="player__button player__button--replay" type="button">
                 <span class="visually-hidden">Повтор</span>
