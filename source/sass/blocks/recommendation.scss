@@ -72,7 +72,7 @@
       background-image: url("../img/icon-gift.svg");
       width: 32px;
       height: 38px;
-      top: -3px;
+      top: -8px;
       left: 4px;
     }
   }
@@ -84,7 +84,7 @@
       background-image: url("../img/icon-burger.svg");
       width: 38px;
       height: 34px;
-      top: -4px;
+      top: -3px;
       left: -2px;
     }
   }
@@ -119,6 +119,7 @@
       order: 3;
 
       &::before {
+        top: -4px;
         width: 64px;
         height: 75px;
         margin-bottom: 26px;
