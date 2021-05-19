@@ -35,7 +35,6 @@
   }
 
   @include min($desktop) {
-
     &:nth-child(even) {
       .gallery-card__desc {
         background-color: rgba(0, 0, 0, 0.3);
