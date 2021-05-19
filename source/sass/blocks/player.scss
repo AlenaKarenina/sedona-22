@@ -33,7 +33,7 @@
     bottom: 0;
     width: 100%;
     height: 66px;
-    background-color: $light;
+    background-color: $light-color;
     z-index: -1;
   }
 
@@ -126,11 +126,7 @@
   }
 
   &:hover {
-    color: $dark;
-  }
-
-  &:active {
-    opacity: 0.3;
+    color: $dark-color;
   }
 
   @include min($tablet) {
@@ -140,6 +136,10 @@
       color: $white;
       opacity: 0.6;
     }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

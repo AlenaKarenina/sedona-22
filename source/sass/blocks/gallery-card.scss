@@ -33,7 +33,7 @@
   padding-top: 11px;
 
   @include min($tablet) {
-    background-color: $darkgray;
+    background-color: $darkgray-color;
     padding-left: 20px;
     padding-bottom: 17px;
     padding-right: 80px;

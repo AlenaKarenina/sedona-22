@@ -7,23 +7,32 @@
   font-family: $font;
 
   @include text-parametr(21px, 22px, 700);
-  background-color: $lightblue;
+  background-color: $lightblue-color;
   color: $white;
   border: none;
   text-decoration: none;
   text-transform: uppercase;
 
   &:hover {
-    background-color: $blue;
+    background-color: $blue-color;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    background-color: $blue-2;
+    background-color: $blue-active;
   }
 
   @include min($tablet) {
     min-width: 458px;
+  }
+
+  &--disabled {
+    background-color: $gray;
+
+    &:hover,
+    &:active {
+      background-color: $gray;
+    }
   }
 
   &--form {
