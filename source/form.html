@@ -14,7 +14,6 @@
   </head>
   <body class="page-body">
     <div class="page-container">
-
       <header class="pade-header">
         <a class="pade-header__logo" href="/">
           <picture>
@@ -36,7 +35,7 @@
               <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active">Форма отзыва</a>
+              <a class="main-nav__link main-nav__link--active" aria-current="page">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="https://htmlacademy.ru" target="_blank" rel="noopener">HTML academy</a>
@@ -44,16 +43,13 @@
           </ul>
         </nav>
       </header>
-
       <main class="page-main">
         <h1 class="visually-hidden">
           Форма отзыва о туристическом городе Sedona
         </h1>
-
         <section class="intro intro--inner">
           <img src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
         </section>
-
         <section class="feedback">
           <div class="feedback__heading page-article page-article--inner">
             <h2 class="page-article__title ">
@@ -63,7 +59,6 @@
               Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
             </p>
           </div>
-
           <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="feedback__item feedback__item--name">
               <legend class="feedback__legend">Представьтесь:</legend>
@@ -80,7 +75,6 @@
                 <input class="field__input" type="text" name="patronymic" placeholder="Александрович">
               </label>
             </fieldset>
-
             <fieldset class="feedback__item feedback__item--contacts">
               <legend class="feedback__legend feedback__legend--line">
                 <span>Контактная информация:</span>
@@ -100,7 +94,6 @@
                 </label>
               </div>
             </fieldset>
-
             <fieldset class="feedback__item feedback__item--impression">
               <legend class="feedback__legend">
                 Ваше общее впечатление:
@@ -118,7 +111,6 @@
                 <span class="radio-button__label">Затрудняюсь ответить</span>
               </label>
             </fieldset>
-
             <fieldset class="feedback__item feedback__item--visited">
               <legend class="feedback__legend feedback__legend--line">
                 <span>Посещенные<br> достопримечательности:</span>
@@ -142,7 +134,6 @@
                 </label>
               </div>
             </fieldset>
-
             <fieldset class="feedback__item feedback__item--emotions">
               <legend class="feedback__legend feedback__legend--line">
                 <span>Опишите свои эмоции:</span>
@@ -151,7 +142,6 @@
                 <textarea class="field__input field__input--textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
               </label>
             </fieldset>
-
             <div class="feedback__item feedback__item--bottom">
               <button class="feedback__submit button button--form" type="submit">Отправить отзыв</button>
               <div class="feedback__note">* — обязательные поля</div>
@@ -159,7 +149,6 @@
           </form>
         </section>
       </main>
-
       <footer class="page-footer">
         <p class="page-footer__hashtag">
           #visitSEDONA
@@ -208,7 +197,6 @@
         </div>
       </footer>
     </div>
-
     <section class="modal modal--fail">
       <div class="modal__body">
         <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
@@ -216,7 +204,6 @@
       </div>
       <button class="modal__button button" type="button">ok</button>
     </section>
-
     <section class="modal modal--success">
       <div class="modal__body">
         <h2 class="modal__title">Ваш отзыв отправлен!</h2>
@@ -226,8 +213,6 @@
         <button class="modal__button button" type="button">Закрыть окно</button>
       </div>
     </section>
-
     <script src="js/script.min.js"></script>
-
   </body>
 </html>
