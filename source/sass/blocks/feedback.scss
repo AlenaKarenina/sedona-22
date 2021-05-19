@@ -165,7 +165,7 @@
 
       .feedback__field {
         margin-right: auto;
-        margin-left: 20px;
+        margin-left: 0;
 
         &:nth-child(odd) {
           margin-left: 0;
@@ -176,7 +176,7 @@
         }
 
         .field__input {
-          width: 316px;
+          width: 315px;
         }
       }
     }
@@ -354,13 +354,7 @@
     width: 100%;
 
     .feedback__field {
-      max-width: 460px;
-    }
-
-    .field {
-      &:not(:last-child) {
-        margin-right: 0;
-      }
+      max-width: 480px;
     }
   }
 }

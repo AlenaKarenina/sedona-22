@@ -34,7 +34,6 @@
         margin-right: 16px;
         padding-right: 0;
         padding-left: 0;
-        white-space: nowrap;
       }
     }
   }
@@ -119,6 +118,7 @@
 
   @include min($desktop) {
     width: auto;
+    display: block;
     max-width: 316px;
     flex-grow: 1;
   }
