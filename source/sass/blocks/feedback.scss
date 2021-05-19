@@ -171,6 +171,10 @@
           margin-left: 0;
         }
 
+        &:nth-child(even) {
+          margin-right: 0;
+        }
+
         .field__input {
           width: 316px;
         }
