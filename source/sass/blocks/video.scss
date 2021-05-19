@@ -5,7 +5,7 @@
     padding: 31px 10px 34px;
   }
 
-  @include min(768) {
+  @include min($tablet) {
     padding: 0 60px 38px;
 
     .page-article {
@@ -17,7 +17,7 @@
     }
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     padding: 0 200px 85px;
 
     .page-article {

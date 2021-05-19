@@ -6,7 +6,7 @@
 
   @include text-parametr(18px, 26px, 700);
 
-  @include min(768) {
+  @include min($tablet) {
     @include text-parametr(21px, 26px, 700);
 
     &--line {
@@ -17,7 +17,7 @@
         z-index: 1;
         display: inline-block;
         vertical-align: middle;
-        background-color: $white;
+        background-color: $white-color;
         padding: 0 62px;
       }
 
@@ -30,7 +30,7 @@
         width: 100%;
         height: 1px;
         margin-top: -1px;
-        background-color: $gray;
+        background-color: $gray-color;
       }
     }
   }
@@ -42,7 +42,7 @@
   padding-right: 0;
   text-align: left;
 
-  @include min(768) {
+  @include min($tablet) {
     display: flex;
     flex-wrap: wrap;
     padding-left: 60px;
@@ -50,7 +50,7 @@
     padding-bottom: 60px;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     padding-left: 120px;
     padding-right: 120px;
     padding-bottom: 66px;
@@ -61,7 +61,7 @@
   display: none;
   order: 6;
 
-  @include min(768) {
+  @include min($tablet) {
     display: block;
     padding-top: 6px;
   }
@@ -72,7 +72,7 @@
   margin-right: auto;
   order: 5;
 
-  @include min(768) {
+  @include min($tablet) {
     margin-left: 0;
   }
 }
@@ -84,10 +84,10 @@
   padding-right: 20px;
 
   &:not(:last-child) {
-    border-top: 1px solid $gray;
+    border-top: 1px solid $gray-color;
   }
 
-  @include min(768) {
+  @include min($tablet) {
     padding-left: 0;
     padding-right: 0;
 
@@ -107,7 +107,7 @@
       margin-bottom: 19px;
     }
 
-    @include min(768) {
+    @include min($tablet) {
       width: 50%;
       order: 1;
       padding-left: 58px;
@@ -118,7 +118,7 @@
       }
     }
 
-    @include min(1200) {
+    @include min($desktop) {
       padding-left: 79px;
       padding-top: 0;
       padding-bottom: 0;
@@ -142,7 +142,7 @@
       margin-bottom: 17px;
     }
 
-    @include min(768) {
+    @include min($tablet) {
       width: 100%;
       order: 2;
       padding-top: 44px;
@@ -152,7 +152,7 @@
       }
     }
 
-    @include min(1200) {
+    @include min($desktop) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -177,7 +177,7 @@
       margin-bottom: 21px;
     }
 
-    @include min(768) {
+    @include min($tablet) {
       width: 50%;
       order: 0;
       border-right: 1px solid #dbdbdb;
@@ -194,7 +194,7 @@
       }
     }
 
-    @include min(1200) {
+    @include min($desktop) {
       padding-right: 79px;
       padding-top: 0;
       padding-bottom: 0;
@@ -226,7 +226,7 @@
       margin-left: auto;
     }
 
-    @include min(768) {
+    @include min($tablet) {
       width: 100%;
       order: 3;
       display: flex;
@@ -247,7 +247,7 @@
       }
     }
 
-    @include min(1200) {
+    @include min($desktop) {
       padding-top: 25px;
 
       .feedback__field {
@@ -271,7 +271,7 @@
       margin-bottom: 15px;
     }
 
-    @include min(768) {
+    @include min($tablet) {
       width: 100%;
       order: 4;
 
@@ -288,7 +288,7 @@
     padding-top: 18px;
     text-align: center;
 
-    @include min(768) {
+    @include min($tablet) {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -299,7 +299,7 @@
 }
 
 .feedback__checkbox-wrapper {
-  @include min(768) {
+  @include min($tablet) {
     width: 100%;
     max-width: 458px;
     margin: 0 auto;
@@ -308,7 +308,7 @@
     justify-content: space-between;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     max-width: 100%;
     justify-content: flex-start;
   }
@@ -321,7 +321,7 @@
     }
   }
 
-  @include min(768) {
+  @include min($tablet) {
     .feedback__field {
       &:not(:last-child) {
         margin-bottom: 25px;
@@ -329,7 +329,7 @@
     }
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -355,11 +355,11 @@
 }
 
 .feedback__heading {
-  @include min(768) {
+  @include min($tablet) {
     padding-bottom: 66px;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     padding-bottom: 58px;
   }
 }

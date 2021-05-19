@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  background-color: $lightblue;
+  background-color: $lightblue-color;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -20,7 +20,7 @@
     background-size: 100% auto;
   }
 
-  @include min(768) {
+  @include min($tablet) {
     background-image: url("../img/back-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -29,7 +29,7 @@
     }
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     background-image: url("../img/back-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -47,15 +47,15 @@
   &--index {
     padding: 90px 0 85px 0;
 
-    @include min(768) {
-      padding: 78px 0 90px 0;
-    }
-
     img {
       width: 282px;
       height: 214px;
+    }
 
-      @include min(768) {
+    @include min($tablet) {
+      padding: 78px 0 90px 0;
+
+      img {
         width: 461px;
         height: 350px;
       }
@@ -66,22 +66,22 @@
     padding: 52px 0 67px 0;
     background-position: center bottom;
 
-    @include min(768) {
-      padding: 95px 0 117px 0;
-    }
-
-    @include min(1200) {
-      padding: 102px 0 121px 0;
-    }
-
     img {
       width: 229px;
       height: 39px;
+    }
 
-      @include min(768) {
+    @include min($tablet) {
+      padding: 95px 0 117px 0;
+
+      img {
         width: 457px;
         height: 78px;
       }
+    }
+
+    @include min($desktop) {
+      padding: 102px 0 121px 0;
     }
   }
 }

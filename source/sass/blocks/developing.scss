@@ -5,18 +5,18 @@
   svg {
     display: block;
     margin-top: 0;
-    fill: $black;
+    fill: $black-color;
   }
 
   &:hover {
     svg {
-      fill: $lightblue;
+      fill: $lightblue-color;
     }
   }
 
   &:active {
     svg {
-      fill: $gray;
+      fill: $gray-color;
     }
   }
 }

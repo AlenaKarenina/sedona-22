@@ -14,13 +14,13 @@
     @include text-parametr();
   }
 
-  @include min(768) {
+  @include min($tablet) {
     @include text-parametr(21px, 26px, 700);
     padding: 0 16px;
     margin-bottom: 20px;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     padding: 0 80px;
   }
 }
@@ -41,7 +41,7 @@
     object-fit: cover;
   }
 
-  @include min(768) {
+  @include min($tablet) {
     width: 66.67%;
     height: auto;
     margin: 0;
@@ -51,12 +51,12 @@
 .advantages-item__content {
   padding: 0 12px;
 
-  @include min(768) {
+  @include min($tablet) {
     padding: 40px 32px 42px;
     width: 33.33%;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     padding: 47px 52px 54px;
     max-width: 400px;
   }
@@ -65,7 +65,7 @@
 .advantages-item {
   position: relative;
   padding: 26px 20px 25px;
-  background-color: $lightgray;
+  background-color: $lightgray-color;
 
   &::after {
     content: "";
@@ -75,7 +75,7 @@
     right: 20px;
     height: 1px;
     width: auto;
-    background-color: $gray-2;
+    background-color: $gray-border;
   }
 
   &:last-child {
@@ -84,7 +84,7 @@
     }
   }
 
-  @include min(768) {
+  @include min($tablet) {
     padding: 42px 33px 40px;
 
     &::after {
@@ -92,7 +92,7 @@
     }
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     padding: 43px 42px 61px;
   }
 
@@ -101,14 +101,14 @@
     display: flex;
     flex-direction: column;
     padding: 0;
-    background-color: $lightblue;
-    color: $white;
+    background-color: $lightblue-color;
+    color: $white-color;
 
     &::after {
       display: none;
     }
 
-    @include min(768) {
+    @include min($tablet) {
       width: 100%;
       justify-content: space-between;
 
@@ -126,7 +126,7 @@
       padding-top: 58px;
     }
 
-    @include min(768) {
+    @include min($tablet) {
       padding-top: 0;
       flex-direction: row;
 
@@ -135,7 +135,7 @@
       }
     }
 
-    @include min(1200) {
+    @include min($desktop) {
       .advantages-item__content {
         padding-top: 48px;
       }
@@ -151,7 +151,7 @@
       margin-top: 36px;
     }
 
-    @include min(768) {
+    @include min($tablet) {
       flex-direction: row-reverse;
 
       .advantages-item__content {
@@ -163,7 +163,7 @@
       }
     }
 
-    @include min(1200) {
+    @include min($desktop) {
       .advantages-item__title {
         padding: 0 36px;
       }

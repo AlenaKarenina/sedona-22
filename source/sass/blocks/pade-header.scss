@@ -1,12 +1,9 @@
 .pade-header {
   position: relative;
+  padding-bottom: 56px;
 
-  @include min(768) {
+  @include min($tablet) {
     padding: 16px 0 16px;
-  }
-
-  @include max(767) {
-    padding-bottom: 56px;
   }
 }
 
@@ -23,11 +20,11 @@
     height: 84px;
   }
 
-  @include min(768) {
+  @include min($tablet) {
     top: 0;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     img {
       width: 187px;
       height: 97px;

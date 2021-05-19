@@ -4,11 +4,11 @@
   min-width: 200px;
   text-align: left;
 
-  @include min(768) {
+  @include min($tablet) {
     width: 200px;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     width: auto;
   }
 }
@@ -34,7 +34,7 @@
     width: 56px;
     height: 56px;
     border-radius: 4px;
-    background-color: $light;
+    background-color: $light-color;
   }
 
   &::after {
@@ -50,13 +50,13 @@
 
   &:hover {
     &::before {
-      background-color: $gray;
+      background-color: $gray-color;
     }
   }
 
   &:active {
     &::before {
-      background-color: $gray-3;
+      background-color: $gray-active;
     }
 
     &::after {
@@ -64,11 +64,11 @@
     }
   }
 
-  @include min(768) {
+  @include min($tablet) {
     padding-top: 15px;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     min-width: 204px;
   }
 }

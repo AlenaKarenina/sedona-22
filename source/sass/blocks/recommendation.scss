@@ -9,13 +9,13 @@
   color: $font-color;
   text-align: left;
 
-  @include min(768) {
+  @include min($tablet) {
     flex-direction: row;
     text-align: center;
     padding: 60px 0 0;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     padding: 60px 0 0;
   }
 }
@@ -26,7 +26,7 @@
 
   @include text-parametr(18px, 26px, 700);
 
-  @include min(768) {
+  @include min($tablet) {
     margin-bottom: 23px;
 
     @include text-parametr(21px, 26px, 700);
@@ -53,15 +53,6 @@
     background-repeat: no-repeat;
   }
 
-  @include min(768) {
-    padding: 97px 30px 60px;
-    width: 33.33%;
-  }
-
-  @include min(1200) {
-    padding: 98px 58px 81px;
-  }
-
   &--housing {
     order: 1;
 
@@ -71,12 +62,6 @@
       height: 37px;
       top: -8px;
       left: 0;
-
-      @include min(768) {
-        width: 75px;
-        height: 72px;
-        margin-bottom: 26px;
-      }
     }
   }
 
@@ -87,18 +72,8 @@
       background-image: url("../img/icon-gift.svg");
       width: 32px;
       height: 38px;
-      top: -10px;
+      top: -8px;
       left: 4px;
-
-      @include min(768) {
-        width: 64px;
-        height: 75px;
-        margin-bottom: 26px;
-      }
-    }
-
-    @include min(768) {
-      order: 3;
     }
   }
 
@@ -109,46 +84,61 @@
       background-image: url("../img/icon-burger.svg");
       width: 38px;
       height: 34px;
-      top: -4px;
+      top: -3px;
       left: -2px;
-
-      @include min(768) {
-        width: 77px;
-        height: 69px;
-        margin-bottom: 26px;
-      }
-    }
-
-    @include min(768) {
-      order: 2;
-    }
-  }
-
-  @include min(768) {
-    &::before {
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    &--souvenirs {
-      &::before {
-        top: -3px;
-      }
-    }
-
-    &--food {
-      &::before {
-        top: 2px;
-      }
     }
   }
 
   &:not(:last-child) {
     margin-bottom: 26px;
 
-    @include min(768) {
+    @include min($tablet) {
       margin-bottom: 0;
     }
+  }
+
+  @include min($tablet) {
+    padding: 97px 30px 60px;
+    width: 33.33%;
+
+    &::before {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--housing {
+      &::before {
+        width: 75px;
+        height: 72px;
+        margin-bottom: 26px;
+      }
+    }
+
+    &--souvenirs {
+      order: 3;
+
+      &::before {
+        top: -4px;
+        width: 64px;
+        height: 75px;
+        margin-bottom: 26px;
+      }
+    }
+
+    &--food {
+      order: 2;
+
+      &::before {
+        top: 2px;
+        width: 77px;
+        height: 69px;
+        margin-bottom: 26px;
+      }
+    }
+  }
+
+  @include min($desktop) {
+    padding: 98px 58px 81px;
   }
 }

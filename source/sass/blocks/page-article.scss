@@ -4,7 +4,7 @@
 
   @include text-parametr(18px, 26px, 700);
 
-  @include min(768) {
+  @include min($tablet) {
     max-width: 483px;
     margin-left: auto;
     margin-right: auto;
@@ -21,11 +21,11 @@
   text-align: center;
   padding: 32px 10px 15px;
 
-  @include min(768) {
+  @include min($tablet) {
     padding: 44px 60px 52px;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     padding: 55px 60px 41px;
   }
 
@@ -36,7 +36,7 @@
       margin-bottom: 29px;
     }
 
-    @include min(768) {
+    @include min($tablet) {
       width: 100%;
       max-width: 560px;
       margin-left: auto;
@@ -50,7 +50,7 @@
       }
     }
 
-    @include min(1200) {
+    @include min($desktop) {
       padding: 114px 60px 59px;
 
       .page-article__title {

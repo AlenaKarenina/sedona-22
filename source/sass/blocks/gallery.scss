@@ -1,15 +1,15 @@
 .gallery__items {
   padding: 0;
-  border-bottom: 1px solid $gray;
+  border-bottom: 1px solid $gray-color;
 
-  @include min(768) {
-    display: flex;
-    flex-wrap: wrap;
+  @include min($tablet) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(315px, auto));
     padding: 0 60px;
     border-bottom: none;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     padding: 0;
   }
 }
@@ -20,27 +20,22 @@
   margin-bottom: 16px;
   padding-left: 20px;
   padding-right: 20px;
-  border-top: 1px solid $gray;
+  border-top: 1px solid $gray-color;
 
-  @include min(768) {
-    width: 50%;
+  @include min($tablet) {
     padding: 0;
     margin-bottom: 0;
     border-top: none;
-  }
 
-  @include min(1200) {
-    width: 33.33%;
-  }
-
-  &:nth-child(even) {
-    @include min(768) {
+    &:nth-child(even) {
       .gallery-card__desc {
-        background-color: $light;
+        background-color: $light-color;
       }
     }
+  }
 
-    @include min(1200) {
+  @include min($desktop) {
+    &:nth-child(even) {
       .gallery-card__desc {
         background-color: rgba(0, 0, 0, 0.3);
       }
@@ -50,7 +45,9 @@
   &--big {
     width: 100%;
 
-    @include min(768) {
+    @include min($tablet) {
+      grid-column-start: 1;
+      grid-column-end: -1;
       height: auto;
 
       .gallery-card__image-wrapper {
@@ -69,7 +66,7 @@
   margin: 0 auto;
   padding: 31px 10px 31px;
 
-  @include min(768) {
+  @include min($tablet) {
     padding: 64px 60px 78px;
 
     .page-article__title {
@@ -77,7 +74,7 @@
     }
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     padding: 101px 60px 80px;
   }
 }

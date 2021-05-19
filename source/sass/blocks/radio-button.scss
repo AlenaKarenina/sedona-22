@@ -26,7 +26,7 @@
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    background-color: $light;
+    background-color: $light-color;
   }
 
   &::after {
@@ -38,19 +38,19 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: $dark;
+    background-color: $dark-color;
     opacity: 0;
   }
 
   &:hover {
     &::before {
-      background-color: $gray;
+      background-color: $gray-color;
     }
   }
 
   &:active {
     &::before {
-      background-color: $gray-3;
+      background-color: $gray-active;
     }
 
     &::after {
@@ -58,7 +58,7 @@
     }
   }
 
-  @include min(768) {
+  @include min($tablet) {
     padding-top: 16px;
     padding-left: 75px;
   }

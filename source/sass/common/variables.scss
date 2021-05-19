@@ -1,18 +1,24 @@
-$dark: #333333;
-$light: #f2f2f2;
-$darkgray: #eaeaea;
-$lightblue: #81b3d2;
-$blue: #669ec0;
-$blue-2: #5496bd;
-$gray: #e5e5e5;
-$gray-2: #d6d6d6;
-$gray-3: #d5d5d5;
-$gray-4: #e6e6e6;
-$lightgray: #eeeeee;
+//font
 $font: "PT Sans", "Arial", sans-serif;
-$black: black;
-$white: white;
-$brown: #766357;
-$darkbrown: #604e43;
+
+//color
+$dark-color: #333333;
+$light-color: #f2f2f2;
+$darkgray-color: #eaeaea;
+$lightblue-color: #81b3d2;
+$blue-color: #669ec0;
+$blue-active: #5496bd;
+$gray-color: #e5e5e5;
+$gray-border: #d6d6d6;
+$gray-active: #d5d5d5;
+$lightgray-color: #eeeeee;
+$black-color: #000000;
+$white-color: #ffffff;
+$brown-color: #766357;
+$darkbrown-color: #604e43;
 $video-button: #5c6870;
-$font-color: $black;
+$font-color: $black-color;
+
+//breakpoint
+$tablet: 768px;
+$desktop: 1200px;

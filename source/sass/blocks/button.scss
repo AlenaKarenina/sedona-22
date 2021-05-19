@@ -7,35 +7,45 @@
   font-family: $font;
 
   @include text-parametr(21px, 22px, 700);
-  background-color: $lightblue;
-  color: $white;
+  background-color: $lightblue-color;
+  color: $white-color;
   border: none;
   text-decoration: none;
   text-transform: uppercase;
 
   &:hover {
-    background-color: $blue;
+    background-color: $blue-color;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    background-color: $blue-2;
+    background-color: $blue-active;
   }
 
-  @include min(768) {
+  @include min($tablet) {
     min-width: 458px;
+  }
+
+  &--disabled,
+  &:disabled {
+    background-color: $gray-color;
+
+    &:hover,
+    &:active {
+      background-color: $gray-color;
+    }
   }
 
   &--form {
     min-width: 280px;
     padding: 20px 47px 16px;
 
-    @include min(768) {
+    @include min($tablet) {
       min-width: 324px;
       padding-right: 56px;
     }
 
-    @include min(1200) {
+    @include min($desktop) {
       min-width: 480px;
       padding-right: 47px;
     }
