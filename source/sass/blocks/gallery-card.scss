@@ -97,7 +97,7 @@
   }
 
   @include min($desktop) {
-    color: $white;
+    color: $white-color;
     opacity: 1;
   }
 }

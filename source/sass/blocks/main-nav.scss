@@ -16,7 +16,7 @@
   background-color: $lightblue-color;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: $white;
+  color: $white-color;
 
   &:last-child {
     position: relative;
@@ -43,7 +43,7 @@
   }
 
   @include min($tablet) {
-    background-color: $white;
+    background-color: $white-color;
     width: 20%;
     border: none;
 
@@ -88,10 +88,10 @@
     }
 
     &--active {
-      color: $brown;
+      color: $brown-color;
 
       &:hover {
-        color: $darkbrown;
+        color: $darkbrown-color;
       }
 
       &:active {

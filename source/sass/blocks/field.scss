@@ -80,13 +80,13 @@
   }
 
   &:hover {
-    background-color: $gray;
-    border-color: $gray;
+    background-color: $gray-color;
+    border-color: $gray-color;
   }
 
   &:focus {
     outline: none;
-    background-color: $white;
+    background-color: $white-color;
   }
 }
 
