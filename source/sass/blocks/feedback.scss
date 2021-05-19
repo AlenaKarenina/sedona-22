@@ -332,7 +332,7 @@
   }
 }
 
-.feedback__contacts-wrapper {
+/*.feedback__contacts-wrapper {
   .feedback__field {
     &:not(:last-child) {
       margin-bottom: 14px;
@@ -355,6 +355,49 @@
 
     .feedback__field {
       max-width: 480px;
+    }
+  }
+}*/
+
+.feedback__contacts-wrapper {
+  .feedback__field {
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+
+  @include min($tablet) {
+    .feedback__field {
+      &:not(:last-child),
+      &:last-child {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  @include min($desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .feedback__field {
+      max-width: calc(50% - 5px);
+      margin-right: 10px;
+      margin-left: auto;
+
+      &:nth-child(odd) {
+        margin-left: 0;
+        justify-content: flex-start;
+      }
+
+      &:nth-child(even) {
+        margin-right: 0;
+        justify-content: flex-end;
+      }
+    }
+
+    .field__input {
+      width: 310px;
     }
   }
 }
