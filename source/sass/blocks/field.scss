@@ -103,13 +103,13 @@
 
   &--phone {
     &::before {
-      background: url("../img/icon-phone.svg") 0 0 no-repeat;
+      background: $gray-icon url("../img/icon-phone.svg") center center no-repeat;
     }
   }
 
   &--email {
     &::before {
-      background: url("../img/icon-email.svg") 0 0 no-repeat;
+      background: $gray-icon url("../img/icon-email.svg") center center no-repeat;
     }
   }
 
