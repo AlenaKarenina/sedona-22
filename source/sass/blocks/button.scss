@@ -26,7 +26,8 @@
     min-width: 458px;
   }
 
-  &--disabled {
+  &--disabled,
+  &:disabled {
     background-color: $gray-color;
 
     &:hover,
