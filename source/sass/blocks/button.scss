@@ -22,7 +22,7 @@
     background-color: $blue-2;
   }
 
-  @include min(768) {
+  @include min($tablet) {
     min-width: 458px;
   }
 
@@ -30,12 +30,12 @@
     min-width: 280px;
     padding: 20px 47px 16px;
 
-    @include min(768) {
+    @include min($tablet) {
       min-width: 324px;
       padding-right: 56px;
     }
 
-    @include min(1200) {
+    @include min($desktop) {
       min-width: 480px;
       padding-right: 47px;
     }

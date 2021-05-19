@@ -3,7 +3,7 @@
   text-align: left;
 
   &--odd {
-    @include min(768) {
+    @include min($tablet) {
       .gallery-card__like {
         right: 36px;
       }
@@ -23,7 +23,7 @@
     display: block;
   }
 
-  @include min(768) {
+  @include min($tablet) {
     height: 267px;
   }
 }
@@ -32,14 +32,14 @@
   position: relative;
   padding-top: 11px;
 
-  @include min(768) {
+  @include min($tablet) {
     background-color: $darkgray;
     padding-left: 20px;
     padding-bottom: 17px;
     padding-right: 80px;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -55,7 +55,7 @@
 
   @include text-parametr(14px, 24px, 700);
 
-  @include min(768) {
+  @include min($tablet) {
     margin-top: 4px;
   }
 }
@@ -75,7 +75,7 @@
 
   @include text-parametr(14px, 24px, 700);
 
-  @include min(768) {
+  @include min($tablet) {
     position: absolute;
     right: 29px;
     top: 50%;
@@ -91,12 +91,12 @@
   color: black;
   opacity: 0.3;
 
-  @include min(768) {
+  @include min($tablet) {
     top: 0;
     left: 5px;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     color: $white;
     opacity: 1;
   }

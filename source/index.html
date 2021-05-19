@@ -25,7 +25,7 @@
         <nav class="pade-header__nav main-nav main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">
-              Открыть меню
+              Меню
             </span>
           </button>
           <ul class="main-nav__list">
@@ -108,7 +108,7 @@
                   <source type="image/webp" srcset="img/photo-bridge-mobile.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                  <img loading="lazy" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Седона, мост дьявола">
+                  <img src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Седона, мост дьявола" loading="lazy">
                 </picture>
               </div>
             </li>
@@ -140,7 +140,7 @@
                 <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg">
                 <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
-                <img loading="lazy" src="img/map-mobile.jpg" alt="Карта для поиска гостиниц в Седоне">
+                <img src="img/map-mobile.jpg" alt="Карта для поиска гостиниц в Седоне" loading="lazy">
               </picture>
             </noscript>
             <div class="hotel-search__map-iframe" id="map"></div>
@@ -187,8 +187,9 @@
           <span class="developing__text">
             Разработано
           </span>
-          <a class="developing__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener" aria-label="Лого Htmlacademy">
-            <svg width="27" height="35">
+          <a class="developing__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener">
+            <span class="visually-hidden">Лого Htmlacademy</span>
+            <svg width="27" height="35" aria-hidden="true">
               <use xlink:href="img/sprite.svg#logoacademy"></use>
             </svg>
           </a>

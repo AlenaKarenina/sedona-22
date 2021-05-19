@@ -15,7 +15,7 @@
     margin-right: 7px;
   }
 
-  @include min(768) {
+  @include min($tablet) {
     &:last-child {
       margin-right: 9px;
     }

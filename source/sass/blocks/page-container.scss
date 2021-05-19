@@ -6,11 +6,11 @@
   align-items: baseline;
   background-color: white;
 
-  @include min(768) {
+  @include min($tablet) {
     margin: 0 auto;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     max-width: 1200px;
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   }

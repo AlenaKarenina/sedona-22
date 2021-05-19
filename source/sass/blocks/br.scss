@@ -2,7 +2,7 @@
   &--mobile {
     display: block;
 
-    @include min(768) {
+    @include min($tablet) {
       display: none;
     }
   }
@@ -10,7 +10,7 @@
   &--desktop {
     display: none;
 
-    @include min(1200) {
+    @include min($desktop) {
       display: block;
     }
   }
@@ -18,11 +18,11 @@
   &--tablet {
     display: none;
 
-    @include min(768) {
+    @include min($tablet) {
       display: block;
     }
 
-    @include min(1200) {
+    @include min($desktop) {
       display: none;
     }
   }
@@ -30,7 +30,7 @@
   &--tablet-desktop {
     display: none;
 
-    @include min(768) {
+    @include min($tablet) {
       display: block;
     }
   }

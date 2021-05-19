@@ -69,16 +69,17 @@
                     <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                    <img loading="lazy" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
+                    <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы" loading="lazy">
                   </picture>
                 </a>
                 <div class="gallery-card__desc">
                   <h3 class="gallery-card__name">Неродные просторы</h3>
                   <p class="gallery-card__author">Автор фото: Борис</p>
                   <div class="gallery-card__like">
-                    <svg class="gallery-card__icon" width="23" height="21">
+                    <svg class="gallery-card__icon" width="23" height="21" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#like"></use>
                     </svg>
+                    <span class="visually-hidden">Количество лайков</span>
                     1350
                   </div>
                 </div>
@@ -92,16 +93,17 @@
                   <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                  <img loading="lazy" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность">
+                  <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность" loading="lazy">
                 </picture>
               </a>
               <div class="gallery-card__desc">
                 <h3 class="gallery-card__name">Местная растительность</h3>
                 <p class="gallery-card__author">Автор фото: Сергей</p>
                 <div class="gallery-card__like">
-                  <svg class="gallery-card__icon" width="23" height="21">
+                  <svg class="gallery-card__icon" width="23" height="21" aria-hidden="true">
                     <use xlink:href="img/sprite.svg#like"></use>
                   </svg>
+                  <span class="visually-hidden">Количество лайков</span>
                   143
                 </div>
               </div>
@@ -114,16 +116,17 @@
                   <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-                  <img loading="lazy" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
+                  <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север" loading="lazy">
                 </picture>
               </a>
               <div class="gallery-card__desc">
                 <h3 class="gallery-card__name">Дорога на север</h3>
                 <p class="gallery-card__author">Автор фото: Петр</p>
                 <div class="gallery-card__like">
-                  <svg class="gallery-card__icon" width="23" height="21">
+                  <svg class="gallery-card__icon" width="23" height="21" aria-hidden="true">
                     <use xlink:href="img/sprite.svg#like"></use>
                   </svg>
+                  <span class="visually-hidden">Количество лайков</span>
                   96
                 </div>
               </div>
@@ -136,16 +139,17 @@
                   <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-                  <img loading="lazy" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
+                  <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола" loading="lazy">
                 </picture>
               </a>
               <div class="gallery-card__desc">
                 <h3 class="gallery-card__name">Мост дьявола</h3>
                 <p class="gallery-card__author">Автор фото: Антон</p>
                 <div class="gallery-card__like">
-                  <svg class="gallery-card__icon" width="23" height="21">
+                  <svg class="gallery-card__icon" width="23" height="21" aria-hidden="true">
                     <use xlink:href="img/sprite.svg#like"></use>
                   </svg>
+                  <span class="visually-hidden">Количество лайков</span>
                   254
                 </div>
               </div>
@@ -170,19 +174,19 @@
               </div>
               <button class="player__button player__button--replay" type="button">
                 <span class="visually-hidden">Повтор</span>
-                <svg width="16" height="20">
+                <svg width="16" height="20" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#replay"></use>
                 </svg>
               </button>
               <button class="player__button player__button--subtitles" type="button">
                 <span class="visually-hidden">Субтитры</span>
-                <svg width="32" height="20">
+                <svg width="32" height="20" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#subtitle"></use>
                 </svg>
               </button>
               <button class="player__button player__button--fullscreen" type="button">
                 <span class="visually-hidden">Во весь экран</span>
-                <svg width="20" height="20">
+                <svg width="20" height="20" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#fullscreen"></use>
                 </svg>
               </button>
@@ -230,8 +234,9 @@
           <span class="developing__text">
             Разработано
           </span>
-          <a class="developing__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener" aria-label="Лого Htmlacademy">
-            <svg width="27" height="35">
+          <a class="developing__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener">
+            <span class="visually-hidden">Лого Htmlacademy</span>
+            <svg width="27" height="35" aria-hidden="true">
               <use xlink:href="img/sprite.svg#logoacademy"></use>
             </svg>
           </a>

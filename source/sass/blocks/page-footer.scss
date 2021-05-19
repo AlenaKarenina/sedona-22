@@ -1,14 +1,14 @@
 .page-footer {
   padding: 38px 20px 18px;
 
-  @include min(768) {
+  @include min($tablet) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 34px 60px 33px;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     padding: 33px 120px 33px;
   }
 }
@@ -21,7 +21,7 @@
   @include text-parametr(21px, 25px, 700);
   margin: 0 0 31px;
 
-  @include min(768) {
+  @include min($tablet) {
     margin: 0;
   }
 }
@@ -29,7 +29,7 @@
 .page-footer__developing {
   margin-top: 34px;
 
-  @include min(768) {
+  @include min($tablet) {
     margin: 0;
   }
 }

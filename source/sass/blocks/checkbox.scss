@@ -4,11 +4,11 @@
   min-width: 200px;
   text-align: left;
 
-  @include min(768) {
+  @include min($tablet) {
     width: 200px;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     width: auto;
   }
 }
@@ -64,11 +64,11 @@
     }
   }
 
-  @include min(768) {
+  @include min($tablet) {
     padding-top: 15px;
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     min-width: 204px;
   }
 }

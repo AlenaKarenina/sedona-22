@@ -58,7 +58,7 @@
     }
   }
 
-  @include min(768) {
+  @include min($tablet) {
     padding-top: 16px;
     padding-left: 75px;
   }

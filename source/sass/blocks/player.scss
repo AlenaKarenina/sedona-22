@@ -3,7 +3,7 @@
   width: 100%;
   padding-bottom: 67px;
 
-  @include min(768) {
+  @include min($tablet) {
     padding-bottom: 0;
     height: 500px;
   }
@@ -37,7 +37,7 @@
     z-index: -1;
   }
 
-  @include min(768) {
+  @include min($tablet) {
     left: 0;
     right: 0;
     bottom: 0;
@@ -54,7 +54,7 @@
     }
   }
 
-  @include min(1200) {
+  @include min($desktop) {
     padding-left: 34px;
     padding-right: 43px;
   }
@@ -68,7 +68,7 @@
   height: 45px;
   order: 0;
 
-  @include min(768) {
+  @include min($tablet) {
     order: 1;
     margin-right: 42px;
   }
@@ -91,7 +91,7 @@
   background-color: $white;
   border-radius: 50%;
 
-  @include min(768) {
+  @include min($tablet) {
     left: 111px;
   }
 }
@@ -108,7 +108,7 @@
     flex-grow: 2;
     order: 1;
 
-    @include min(768) {
+    @include min($tablet) {
       order: 0;
       margin-right: 42px;
     }
@@ -133,7 +133,7 @@
     opacity: 0.3;
   }
 
-  @include min(768) {
+  @include min($tablet) {
     color: $white;
 
     &:hover {
