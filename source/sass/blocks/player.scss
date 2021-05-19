@@ -94,6 +94,10 @@
   @include min($tablet) {
     left: 111px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .player__button {

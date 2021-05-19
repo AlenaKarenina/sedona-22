@@ -4,8 +4,8 @@
 
   &--odd {
     @include min($tablet) {
-      .gallery-card__like {
-        right: 36px;
+      .gallery-card__desc {
+        padding-right: 36px;
       }
     }
   }
@@ -33,10 +33,13 @@
   padding-top: 11px;
 
   @include min($tablet) {
-    background-color: $darkgray-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 20px;
     padding-bottom: 17px;
-    padding-right: 80px;
+    padding-right: 29px;
+    background-color: $darkgray-color;
   }
 
   @include min($desktop) {
@@ -76,11 +79,8 @@
   @include text-parametr(14px, 24px, 700);
 
   @include min($tablet) {
-    position: absolute;
-    right: 29px;
-    top: 50%;
-    transform: translateY(-50%);
     margin: 0;
+    margin-top: 8px;
   }
 }
 
