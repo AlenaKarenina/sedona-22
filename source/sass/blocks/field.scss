@@ -117,9 +117,6 @@
   }
 
   @include min($desktop) {
-    width: auto;
-    display: block;
-    max-width: 316px;
-    flex-grow: 1;
+    max-width: 315px;
   }
 }
