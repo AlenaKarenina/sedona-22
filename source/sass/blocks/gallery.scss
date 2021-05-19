@@ -3,8 +3,8 @@
   border-bottom: 1px solid $gray;
 
   @include min($tablet) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(315px, auto));
     padding: 0 60px;
     border-bottom: none;
   }
@@ -23,7 +23,6 @@
   border-top: 1px solid $gray;
 
   @include min($tablet) {
-    width: 50%;
     padding: 0;
     margin-bottom: 0;
     border-top: none;
@@ -36,7 +35,6 @@
   }
 
   @include min($desktop) {
-    width: 33.33%;
 
     &:nth-child(even) {
       .gallery-card__desc {
@@ -49,6 +47,8 @@
     width: 100%;
 
     @include min($tablet) {
+      grid-column-start: 1;
+      grid-column-end: -1;
       height: auto;
 
       .gallery-card__image-wrapper {
