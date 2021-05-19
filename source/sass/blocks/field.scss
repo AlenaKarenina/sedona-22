@@ -89,6 +89,7 @@
 
 .field__icon-wrapper {
   position: relative;
+  display: block;
   width: 100%;
 
   &::before {
@@ -112,11 +113,7 @@
     }
   }
 
-  @include min($tablet) {
-    width: 100%;
-  }
-
   @include min($desktop) {
-    max-width: 315px;
+    width: auto;
   }
 }
