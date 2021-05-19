@@ -162,6 +162,19 @@
       .feedback__legend {
         margin-bottom: 71px;
       }
+
+      .feedback__field {
+        margin-right: auto;
+        margin-left: 20px;
+
+        &:nth-child(odd) {
+          margin-left: 0;
+        }
+
+        .field__input {
+          width: 316px;
+        }
+      }
     }
   }
 
@@ -337,7 +350,7 @@
     width: 100%;
 
     .feedback__field {
-      max-width: 480px;
+      max-width: 460px;
     }
 
     .field {
